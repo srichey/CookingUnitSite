@@ -1,23 +1,23 @@
 export const gramsToCupsEn = {
-  title: "Grams to Cups Converter (Ingredient-Specific)",
+  title: "Grams to Cups Converter (with Ingredient Picker)",
   metaDescription:
-    "Convert grams to cups for cooking and baking with the correct density for each ingredient. Flour, sugar, butter, oats, honey, cocoa, and more.",
+    "Convert grams to cups for cooking and baking, with the right density for each food. Flour, sugar, butter, oats, honey, cocoa, and more.",
   h1: "Grams to cups converter",
   tldr:
-    "100 grams of all-purpose flour is about 5/6 of a US cup. 100 grams of granulated sugar is about 1/2 cup. The cup volume depends on the ingredient because density changes. Pick yours in the calculator for the right number.",
+    "100 grams of flour is about 5/6 of a US cup. 100 grams of sugar is about 1/2 cup. 100 grams of butter is just under 1/2 cup. The cups change with each food because they pack differently. Pick yours above for the right number.",
   intro:
-    "Metric recipes give you grams. US measuring cups want cups. The conversion is not one number; it depends on what you are measuring, because density differs for every ingredient. The calculator below uses real density values so the cup figure matches what the recipe expected.",
+    "Metric recipes give grams. US measuring cups want cups. There is no single number that works for every food. Each food has its own weight per cup, so the cups change. The tool above uses the right weight for each food.",
   sections: {
     quickRef: {
-      title: "Quick reference: 100 grams in US cups",
+      title: "Quick chart: 100 grams in US cups",
       body:
-        "If you need a fast lookup, here is how 100 grams converts to US cups for common ingredients:",
+        "Need a fast answer? Here is how 100 grams turns into US cups for common foods:",
       items: [
         "All-purpose flour: 5/6 cup (about 0.83)",
         "Bread flour: 0.79 cup",
         "Cake flour: 7/8 cup (about 0.88)",
-        "Granulated sugar: 1/2 cup",
-        "Brown sugar (packed): 0.47 cup",
+        "White sugar: 1/2 cup",
+        "Brown sugar, packed: 0.47 cup",
         "Powdered sugar: 7/8 cup",
         "Butter: 0.44 cup (about 7 tablespoons)",
         "Whole milk: 0.41 cup",
@@ -26,81 +26,81 @@ export const gramsToCupsEn = {
         "Honey: 0.30 cup",
         "Cocoa powder: 1.18 cup",
         "Rolled oats: 1.11 cup",
-        "White rice, uncooked: 1/2 cup",
+        "Dry white rice: 1/2 cup",
       ],
     },
     howItWorks: {
-      title: "How grams to cups conversion actually works",
+      title: "How grams to cups works",
       body: [
-        "Grams measure mass. Cups measure volume. To go from grams to cups you divide the gram amount by the density of the ingredient (grams per cup), and the result is the volume in cups.",
-        "A standard US cup is 236.59 millilitres. The density for each ingredient is fixed: 120 grams per cup for all-purpose flour, 200 for granulated sugar, 227 for butter, and so on. Divide your gram amount by that density and you get the cup figure.",
-        "Because the math goes through density, the same gram amount maps to different cup volumes for different ingredients. 100 grams of flour is most of a cup. 100 grams of cocoa powder is more than a full cup. 100 grams of honey is less than a third of a cup.",
+        "Grams measure weight. Cups measure space. To go from grams to cups, you divide the grams by the weight per cup of your food.",
+        "A US cup is about 237 ml. Each food has its own weight per cup: 120 grams for flour, 200 for sugar, 227 for butter. Divide your grams by that number and you get cups.",
+        "The same gram weight gives different cups for different foods. 100 grams of flour fills most of a cup. 100 grams of cocoa fills more than a full cup. 100 grams of honey fills less than a third.",
       ],
     },
     accuracy: {
-      title: "Why the cup answer is approximate",
+      title: "Why the cup answer is close, not exact",
       body: [
-        "Even when the density is right, cups carry measurement error: how you scoop, whether you tap the cup to settle the ingredient, whether you level the top. Two cooks measuring the same recipe by cups will get slightly different results.",
-        "Grams do not have that problem. If your recipe is from a metric source and you want it exact, leave it in grams and use a kitchen scale. The cup conversion is most useful when your measuring cups are the only tool you have, or when you want a rough idea of how much volume the recipe will fill.",
+        "Even with the right weight, cups can be off. It comes down to how you scoop, if you tap the cup, and how flat you level the top. Two cooks measuring the same recipe in cups get small differences each time.",
+        "Grams do not have this problem. If your recipe is in grams and you want it exact, leave it in grams and use a scale. The cup answer is most useful when cups are your only tool, or when you want a rough idea of how much space the food will fill.",
       ],
     },
     metric: {
-      title: "US cup vs metric cup vs UK cup",
+      title: "US cup, metric cup, and UK cup",
       body:
-        "All cup values on this page use the US cup of 236.59 millilitres. The metric cup is 250 millilitres, about 6 percent larger. The pre-1971 imperial UK cup is 284 millilitres. If your recipe came from outside the US, double-check which cup it expects, especially in baking where small differences matter.",
+        "All cup values here use the US cup of about 237 ml. The metric cup is 250 ml, about 6 percent bigger. The old UK imperial cup is 284 ml. If your recipe came from outside the US, check which cup it uses. Small changes can matter in baking.",
     },
     geo: {
-      title: "Trusted reference values",
+      title: "Where our numbers come from",
       body:
-        "Density values follow King Arthur Baking Company, USDA FoodData Central, and America's Test Kitchen's ingredient weight chart. Flour is the spoon-and-level density, not scoop-and-pack.",
+        "Weight values follow King Arthur Baking, USDA FoodData Central, and America's Test Kitchen's ingredient chart. Flour uses the spoon-and-level method, not scoop-and-pack.",
     },
   },
   commonMistakes: {
     title: "Common grams to cups mistakes",
     items: [
-      "Using one conversion factor (1 cup = 128 g) for every ingredient. Density varies; flour, sugar, butter, honey all map differently.",
-      "Mixing US cups (236.59 ml) with metric cups (250 ml) when a recipe came from outside the US.",
-      "Converting flour grams to cups, then measuring by scoop-and-pack. The conversion assumes spoon-and-level; scooping repacks the flour and adds 10 to 25 grams back in.",
-      "Trying to convert butter grams to cups when the package already gives sticks. One US stick is 113 grams, 8 tablespoons, half a cup. No conversion needed for stick butter.",
-      "Treating brown sugar like granulated. Brown sugar cup measurements assume the cup is packed firmly.",
+      "Using one factor (1 cup = 128 g) for every food. Flour, sugar, butter, and honey all turn into different cup amounts.",
+      "Mixing US cups (237 ml) with metric cups (250 ml). A recipe from outside the US may want one or the other.",
+      "Converting flour grams to cups and then scooping the cup. The math assumes you spoon and level. If you scoop, you pack the flour and add 10 to 25 grams back.",
+      "Converting butter grams to cups when the wrapper already has sticks. One US stick is 113 grams, 8 tablespoons, half a cup. No math needed for stick butter.",
+      "Treating brown sugar like white. Brown sugar cup amounts assume the cup is packed in firm.",
     ],
   },
   faqs: [
     {
       question: "How many cups is 100 grams of flour?",
       answer:
-        "100 grams of all-purpose flour is approximately 5/6 of a US cup, or about 0.83 cup. Measured with the spoon-and-level method. If you scoop the cup straight from the bag instead, you will end up with more flour than the recipe wanted.",
+        "100 grams of all-purpose flour is about 5/6 of a US cup, or 0.83 cup. That is the spoon-and-level value. If you scoop the cup straight from the bag instead, you will end up with more flour than the recipe wanted.",
     },
     {
       question: "How many cups is 250 grams of flour?",
       answer:
-        "250 grams of all-purpose flour is approximately 2 and 1/8 US cups (2.08 cups). Many European bread recipes call for 500 grams of flour, which is roughly 4 and 1/6 US cups.",
+        "250 grams of all-purpose flour is about 2 and 1/8 US cups (2.08 cups). Many European bread recipes call for 500 grams of flour, or about 4 and 1/6 US cups.",
     },
     {
       question: "How many cups is 200 grams of sugar?",
       answer:
-        "200 grams of granulated sugar is approximately 1 US cup. This is one of the few clean conversions: granulated sugar has a density very close to 200 grams per US cup.",
+        "200 grams of white sugar is about 1 US cup. This is one of the cleanest swaps: white sugar weighs almost exactly 200 grams per US cup.",
     },
     {
-      question: "How do I convert a metric baking recipe to cups?",
+      question: "How do I change a metric baking recipe to cups?",
       answer:
-        "Take each ingredient one at a time. Look up its grams-per-cup density and divide the recipe amount by it. The calculator above does this for any ingredient in our database. For ingredients we have not listed, weighing is the more reliable path.",
+        "Take each food one at a time. Look up its weight per cup and divide the recipe grams by it. The tool above does this for you. For foods we have not listed, a scale is more reliable.",
     },
     {
-      question: "Why does my recipe say 240 ml when a US cup is 236.59 ml?",
+      question: "Why does my recipe say 240 ml when a US cup is 237 ml?",
       answer:
-        "Many recipe writers round the US cup to 240 millilitres for simplicity. The actual standard is 236.5882365 ml. The 1.4 percent difference does not affect cooking and rarely affects baking. Australian metric cups, however, are 250 ml; that 6 percent difference can matter.",
+        "Many writers round the US cup to 240 ml for simple math. The real value is 236.5882365 ml. The 1.4 percent gap does not change cooking and almost never changes baking. The Australian metric cup is 250 ml, and that 6 percent gap can matter.",
     },
     {
-      question: "Is it more accurate to convert grams to cups or to use a kitchen scale?",
+      question: "Is it better to convert grams to cups or just use a scale?",
       answer:
-        "A kitchen scale is far more accurate. Cup measurement adds variability from how you scoop, pack, and level. If your recipe is in grams, a digital scale costs less than a measuring cup set and gives you the exact recipe author's intent every time.",
+        "A scale wins. Cup measuring adds error from how you scoop, pack, and level. If your recipe is in grams, a digital scale costs less than a set of measuring cups and gives you the recipe writer's exact amount every time.",
     },
   ],
   related: {
-    title: "Related calculators",
+    title: "Related tools",
     items: [
-      { label: "Cups to grams (reverse converter)", href: "/cups-to-grams" },
+      { label: "Cups to grams (the other way)", href: "/cups-to-grams" },
       { label: "Recipe scaler", href: "/recipe-scaler" },
       { label: "All calculators", href: "/calculators" },
       { label: "Cooking FAQ", href: "/faq" },

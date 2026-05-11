@@ -48,10 +48,7 @@ export function CalculatorsIndex({ groups, liveBadge, soonBadge }: Props) {
 
 function LinkTile({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <Link
-      href={href}
-      className="block h-full rounded-lg border border-[color:var(--color-line)] bg-white p-4 transition-colors hover:border-[color:var(--color-accent)]"
-    >
+    <Link href={href} className="kc-tile kc-tile-link block h-full p-4">
       {children}
     </Link>
   );
@@ -59,7 +56,7 @@ function LinkTile({ href, children }: { href: string; children: React.ReactNode 
 
 function DimTile({ children }: { href: string; children: React.ReactNode }) {
   return (
-    <div className="block h-full rounded-lg border border-dashed border-[color:var(--color-line-strong)] bg-white/40 p-4">
+    <div className="block h-full rounded-md border border-dashed border-[color:var(--color-line-strong)] bg-white/40 p-4">
       {children}
     </div>
   );

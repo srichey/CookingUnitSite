@@ -149,7 +149,7 @@ export function CupsGramsConverter({ locale, defaultDirection, lockIngredientId 
   const grouped = useMemo(() => groupIngredients(), []);
 
   return (
-    <section className="rounded-lg border border-[color:var(--color-line-strong)] bg-[color:var(--color-surface)] p-4 shadow-[var(--shadow-soft)] sm:p-6">
+    <section className="kc-card p-4 sm:p-6">
       {/* Ingredient picker */}
       <label className="block">
         <span className="mb-1 block text-sm font-medium text-[color:var(--color-ink-muted)]">
@@ -159,7 +159,7 @@ export function CupsGramsConverter({ locale, defaultDirection, lockIngredientId 
           value={ingredientId}
           disabled={!!lockIngredientId}
           onChange={(e) => setIngredientId(e.target.value)}
-          className="w-full rounded-md border border-[color:var(--color-line-strong)] bg-white px-3 py-3 text-base focus:border-[color:var(--color-accent)] focus:outline-none disabled:opacity-70"
+          className="kc-input w-full px-3 py-3 text-base disabled:opacity-70"
         >
           {grouped.map((group) => (
             <optgroup key={group.category} label={s.categories[group.category]}>
@@ -269,11 +269,7 @@ function NumberField({
         autoFocus={autoFocus}
         onChange={(e) => onChange(e.target.value)}
         aria-invalid={invalid}
-        className={`w-full rounded-md border bg-white px-3 py-3 text-lg shadow-inner focus:outline-none ${
-          invalid
-            ? "border-[color:var(--color-warm)]"
-            : "border-[color:var(--color-line-strong)] focus:border-[color:var(--color-accent)]"
-        }`}
+        className="kc-input kc-result w-full px-3 py-3 text-2xl"
       />
     </label>
   );
@@ -286,7 +282,7 @@ function SwapButton({ onClick, label }: { onClick: () => void; label: string }) 
       onClick={onClick}
       aria-label={label}
       title={label}
-      className="mb-1 inline-flex h-11 w-11 items-center justify-center self-end rounded-full border border-[color:var(--color-line-strong)] bg-white text-base text-[color:var(--color-ink-muted)] hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-ink)]"
+      className="kc-btn-secondary mb-1 inline-flex h-11 w-11 items-center justify-center self-end rounded-full text-base text-[color:var(--color-ink-muted)] hover:text-[color:var(--color-ink)]"
     >
       <span aria-hidden="true">⇄</span>
     </button>
@@ -317,7 +313,7 @@ function QuickRow({
             key={v}
             type="button"
             onClick={() => onPick(v)}
-            className="rounded-md border border-[color:var(--color-line-strong)] bg-white px-3 py-1.5 text-sm font-medium text-[color:var(--color-ink)] hover:border-[color:var(--color-accent)]"
+            className="kc-btn-secondary px-3 py-1.5 text-sm font-medium text-[color:var(--color-ink)]"
           >
             {kind === "cup"
               ? formatAmount(v)

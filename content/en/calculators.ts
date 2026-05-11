@@ -58,14 +58,14 @@ export const calculatorsCopyEn = {
         {
           title: "Tablespoons to cups",
           description: "Common kitchen math: tbsp, tsp, fluid ounces, and cups.",
-          href: "/calculators",
-          status: "soon",
+          href: "/tablespoons-to-cups",
+          status: "live",
         },
         {
           title: "Milliliters to cups",
           description: "Quick metric-to-US volume conversion for liquids.",
-          href: "/calculators",
-          status: "soon",
+          href: "/ml-to-cups",
+          status: "live",
         },
       ],
     },
@@ -75,8 +75,8 @@ export const calculatorsCopyEn = {
         {
           title: "Ounces to grams",
           description: "US ounces to metric grams, and the reverse.",
-          href: "/calculators",
-          status: "soon",
+          href: "/ounces-to-grams",
+          status: "live",
         },
         {
           title: "Pounds to kilograms",
@@ -92,14 +92,20 @@ export const calculatorsCopyEn = {
         {
           title: "Fahrenheit to Celsius (oven)",
           description: "Convert oven temperatures, with gas mark equivalents.",
-          href: "/calculators",
-          status: "soon",
+          href: "/fahrenheit-to-celsius",
+          status: "live",
         },
       ],
     },
     {
       heading: "Ingredient-specific weights",
       tiles: [
+        {
+          title: "Butter converter",
+          description: "Sticks, tablespoons, cups, and grams for US butter.",
+          href: "/butter-converter",
+          status: "live",
+        },
         {
           title: "Flour cups to grams",
           description: "All-purpose, bread, cake, and whole wheat flour weights.",
@@ -109,12 +115,6 @@ export const calculatorsCopyEn = {
         {
           title: "Sugar cups to grams",
           description: "Granulated, brown (packed), and powdered sugar weights.",
-          href: "/calculators",
-          status: "soon",
-        },
-        {
-          title: "Butter converter",
-          description: "Sticks, tablespoons, cups, and grams for US butter.",
           href: "/calculators",
           status: "soon",
         },

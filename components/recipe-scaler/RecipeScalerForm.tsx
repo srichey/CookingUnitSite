@@ -173,7 +173,7 @@ export function RecipeScalerForm({ locale }: Props) {
   return (
     <section
       aria-labelledby={`${reactId}-heading`}
-      className="rounded-lg border border-[color:var(--color-line-strong)] bg-[color:var(--color-surface)] p-4 shadow-[var(--shadow-soft)] sm:p-6"
+      className="kc-card p-4 sm:p-6"
     >
       <h2 id={`${reactId}-heading`} className="sr-only">
         {strings.scaledTitle}
@@ -192,7 +192,7 @@ export function RecipeScalerForm({ locale }: Props) {
             step="any"
             value={originalServings}
             onChange={(e) => setOriginalServings(e.target.value)}
-            className="w-full rounded-md border border-[color:var(--color-line-strong)] bg-white px-3 py-3 text-lg shadow-inner focus:border-[color:var(--color-accent)] focus:outline-none"
+            className="kc-input w-full px-3 py-3 text-lg"
           />
         </label>
         <label className="block">
@@ -206,7 +206,7 @@ export function RecipeScalerForm({ locale }: Props) {
             step="any"
             value={desiredServings}
             onChange={(e) => setDesiredServings(e.target.value)}
-            className="w-full rounded-md border border-[color:var(--color-line-strong)] bg-white px-3 py-3 text-lg shadow-inner focus:border-[color:var(--color-accent)] focus:outline-none"
+            className="kc-input w-full px-3 py-3 text-lg"
           />
         </label>
       </div>
@@ -281,14 +281,14 @@ export function RecipeScalerForm({ locale }: Props) {
           <button
             type="button"
             onClick={copyToClipboard}
-            className="rounded-md bg-[color:var(--color-accent)] px-4 py-2 text-sm font-medium text-white hover:bg-[color:var(--color-accent-strong)]"
+            className="kc-btn-primary px-4 py-2 text-sm font-medium"
           >
             {copied ? strings.copied : strings.copy}
           </button>
           <button
             type="button"
             onClick={print}
-            className="rounded-md border border-[color:var(--color-line-strong)] bg-white px-4 py-2 text-sm font-medium text-[color:var(--color-ink)] hover:border-[color:var(--color-accent)]"
+            className="kc-btn-secondary px-4 py-2 text-sm font-medium"
           >
             {strings.print}
           </button>
@@ -311,8 +311,8 @@ function PresetButton({
     "rounded-md px-3 py-1.5 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--color-focus)]";
   const styles =
     variant === "primary"
-      ? "bg-[color:var(--color-warm)] text-white hover:bg-[color:var(--color-warm-strong)]"
-      : "border border-[color:var(--color-line-strong)] bg-transparent text-[color:var(--color-ink-muted)] hover:text-[color:var(--color-ink)]";
+      ? "kc-btn-primary"
+      : "kc-btn-secondary text-[color:var(--color-ink-muted)] hover:text-[color:var(--color-ink)]";
   return (
     <button type="button" onClick={onClick} className={`${base} ${styles}`}>
       {children}
@@ -340,7 +340,7 @@ function IngredientRow({
         placeholder={strings.ingredient}
         value={row.name}
         onChange={(e) => onChange({ name: e.target.value })}
-        className="col-span-2 rounded-md border border-[color:var(--color-line-strong)] bg-white px-3 py-2 text-base focus:border-[color:var(--color-accent)] focus:outline-none sm:col-span-1"
+        className="kc-input col-span-2 px-3 py-2 text-base sm:col-span-1"
       />
       <input
         type="text"
@@ -349,13 +349,13 @@ function IngredientRow({
         aria-label={strings.amount}
         value={row.amount}
         onChange={(e) => onChange({ amount: e.target.value })}
-        className="rounded-md border border-[color:var(--color-line-strong)] bg-white px-3 py-2 text-base focus:border-[color:var(--color-accent)] focus:outline-none"
+        className="kc-input px-3 py-2 text-base"
       />
       <select
         value={row.unit}
         aria-label={strings.unit}
         onChange={(e) => onChange({ unit: e.target.value as Unit })}
-        className="rounded-md border border-[color:var(--color-line-strong)] bg-white px-2 py-2 text-base focus:border-[color:var(--color-accent)] focus:outline-none"
+        className="kc-input px-2 py-2 text-base"
       >
         {UNITS.map((u) => (
           <option key={u.unit} value={u.unit}>

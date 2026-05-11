@@ -47,15 +47,15 @@ export const calculadorasCopyEs = {
       tiles: [
         {
           title: "Cucharadas a tazas",
-          description: "Matemática básica de cocina: cucharadas, cucharaditas, onzas líquidas y tazas.",
-          href: "/es/calculadoras",
-          status: "soon",
+          description: "Cuentas básicas de cocina: cucharadas, cucharaditas, onzas líquidas y tazas.",
+          href: "/es/cucharadas-a-tazas",
+          status: "live",
         },
         {
           title: "Mililitros a tazas",
-          description: "Conversión rápida de métrico a tazas estadounidenses para líquidos.",
-          href: "/es/calculadoras",
-          status: "soon",
+          description: "Conversión rápida de métrico a tazas estadounidenses.",
+          href: "/es/mililitros-a-tazas",
+          status: "live",
         },
       ],
     },
@@ -65,8 +65,8 @@ export const calculadorasCopyEs = {
         {
           title: "Onzas a gramos",
           description: "Onzas estadounidenses a gramos, y al revés.",
-          href: "/es/calculadoras",
-          status: "soon",
+          href: "/es/onzas-a-gramos",
+          status: "live",
         },
         {
           title: "Libras a kilogramos",
@@ -81,15 +81,21 @@ export const calculadorasCopyEs = {
       tiles: [
         {
           title: "Fahrenheit a Celsius (horno)",
-          description: "Convierte temperaturas del horno, con equivalencias de marca de gas.",
-          href: "/es/calculadoras",
-          status: "soon",
+          description: "Convierte temperaturas del horno con marcas de gas.",
+          href: "/es/fahrenheit-a-celsius",
+          status: "live",
         },
       ],
     },
     {
       heading: "Pesos por ingrediente",
       tiles: [
+        {
+          title: "Conversor de mantequilla",
+          description: "Barras, cucharadas, tazas y gramos para mantequilla estadounidense.",
+          href: "/es/conversor-de-mantequilla",
+          status: "live",
+        },
         {
           title: "Harina: tazas a gramos",
           description: "Pesos de harina común, de pan, para pastel e integral.",
@@ -98,13 +104,7 @@ export const calculadorasCopyEs = {
         },
         {
           title: "Azúcar: tazas a gramos",
-          description: "Pesos de azúcar blanca, morena (compactada) y glas.",
-          href: "/es/calculadoras",
-          status: "soon",
-        },
-        {
-          title: "Conversor de mantequilla",
-          description: "Barras, cucharadas, tazas y gramos para mantequilla estadounidense.",
+          description: "Pesos de azúcar blanca, morena y glas.",
           href: "/es/calculadoras",
           status: "soon",
         },

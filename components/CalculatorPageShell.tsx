@@ -85,21 +85,31 @@ export function CalculatorPageShell({
   jsonLdScripts,
 }: Props) {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
+    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
       <Breadcrumbs items={breadcrumbs} />
 
-      <h1 className="font-serif text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
-      <p className="mt-3 max-w-prose text-base text-[color:var(--color-ink-muted)] sm:text-lg">{intro}</p>
+      {/* Hero with subtle warm blob behind the title */}
+      <div className="relative isolate">
+        <span
+          aria-hidden="true"
+          className="kc-hero-blob"
+          style={{ width: 340, height: 340, top: -80, left: -60, zIndex: -1 }}
+        />
+        <h1 className="font-serif text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+          {h1}
+        </h1>
+        <p className="mt-4 max-w-prose text-base text-[color:var(--color-ink-soft)] sm:text-lg">{intro}</p>
+      </div>
 
       {/* Calculator above the fold */}
-      <div className="mt-6">{calculator}</div>
+      <div className="mt-8">{calculator}</div>
 
       {/* TL;DR: short, citation-friendly, near the top for AI extraction */}
       <aside
         aria-label={locale === "es" ? "Respuesta corta" : "Quick answer"}
-        className="mt-6 rounded-md border-l-4 border-[color:var(--color-warm)] bg-white/70 p-4"
+        className="mt-8 rounded-lg border-l-4 border-[color:var(--color-warm)] bg-[color:var(--color-warm-soft)]/60 p-4 shadow-[var(--shadow-soft)]"
       >
-        <p className="text-sm font-semibold uppercase tracking-wider text-[color:var(--color-warm-strong)]">
+        <p className="text-xs font-semibold uppercase tracking-wider text-[color:var(--color-warm-strong)]">
           {locale === "es" ? "Respuesta corta" : "Quick answer"}
         </p>
         <p className="mt-1 text-base text-[color:var(--color-ink)]">{tldr}</p>
