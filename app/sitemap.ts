@@ -1,10 +1,18 @@
 import type { MetadataRoute } from "next";
 import { PAGES } from "@/lib/routes";
 import { SITE_URL } from "@/lib/site";
+import { getAllPosts } from "@/lib/blog";
+
+// The sitemap is served at /sitemap.xml by Next.js convention. It lists every
+// page Google should know about: the static pages in lib/routes.ts plus every
+// blog post in each language. Each entry carries an hreflang alternates map
+// when a translated counterpart exists, so Google understands the EN/ES pairs.
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
   const now = new Date();
+
+  // Static pages and calculator pages from the routes registry.
   for (const page of PAGES) {
     for (const locale of ["en", "es"] as const) {
       const path = page.paths[locale];
@@ -22,5 +30,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
   }
+
+  // Individual blog posts in each language.
+  for (const locale of ["en", "es"] as const) {
+    const prefix = locale === "en" ? "/blog" : "/es/blog";
+    const altPrefix = locale === "en" ? "/es/blog" : "/blog";
+    for (const post of getAllPosts(locale)) {
+      const altLang = locale === "en" ? "es-419" : "en-US";
+      const sameLang = locale === "en" ? "en-US" : "es-419";
+      const languages: Record<string, string> = {
+        [sameLang]: `${SITE_URL}${prefix}/${post.slug}`,
+      };
+      if (post.alternateSlug) {
+        languages[altLang] = `${SITE_URL}${altPrefix}/${post.alternateSlug}`;
+      }
+      entries.push({
+        url: `${SITE_URL}${prefix}/${post.slug}`,
+        lastModified: new Date(post.updatedAt || post.publishedAt),
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: { languages },
+      });
+    }
+  }
+
   return entries;
 }
