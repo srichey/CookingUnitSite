@@ -2,6 +2,598 @@ import type { BlogPost } from "@/lib/blog";
 
 export const postsEn: BlogPost[] = [
   {
+    slug: "rolled-vs-quick-vs-steel-cut-oats",
+    locale: "en",
+    title: "Rolled vs Quick vs Steel-Cut Oats: Same Name, Different Weight",
+    description:
+      "Rolled and quick oats both weigh about 90 grams per cup. Steel-cut oats weigh 180 grams per cup. Swapping one for another in a recipe changes everything.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "avena-en-hojuelas-instantanea-cortada",
+    tags: ["oats", "baking", "measurement"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "The grocery store has four shelves of oats. They all say \"oats\" on the front. The recipe just says \"1 cup of oats.\" The wrong choice can make oatmeal cookies that crunch like gravel or overnight oats that stay raw.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 cup of rolled oats (old-fashioned) is about 90 grams. Quick oats weigh the same. 1 cup of dry steel-cut oats is about 180 grams, twice the weight, because the pieces pack tighter. Instant oats sit in the middle at around 80 grams per cup.",
+      },
+      { kind: "h2", text: "What each kind actually is" },
+      { kind: "h3", text: "Rolled oats (old-fashioned)" },
+      {
+        kind: "p",
+        text:
+          "Whole oat groats steamed and pressed flat. They look like coins. They take 5 to 10 minutes to cook into oatmeal. Best for oatmeal cookies, granola, crumbles, and overnight oats. 90 grams per cup.",
+      },
+      { kind: "h3", text: "Quick oats" },
+      {
+        kind: "p",
+        text:
+          "Rolled oats cut smaller so they cook in 1 to 3 minutes. Same weight per cup as rolled. They give a softer, more porridge-like texture in baking. You can usually swap them for rolled, but cookies and granola will be less chewy.",
+      },
+      { kind: "h3", text: "Steel-cut oats (Irish oats)" },
+      {
+        kind: "p",
+        text:
+          "Whole oat groats chopped into pieces with steel blades, not rolled flat. They look like coarse rice. Cook time: 20 to 30 minutes. Used for stovetop oatmeal, savory oats, and risotto-style dishes. Almost never used in baking.",
+      },
+      { kind: "h3", text: "Instant oats" },
+      {
+        kind: "p",
+        text:
+          "Pre-cooked, dried, and rolled even thinner. Ready in 1 minute with hot water. Mainly found in flavored single-serve packets. Not used in baking; the texture turns to mush.",
+      },
+      {
+        kind: "image",
+        alt: "Four small bowls in a row, each holding a different type of oats (rolled, quick, steel-cut, instant), labeled by name and weight per cup.",
+        placeholder:
+          "Four small white bowls on a wood board. Each holds one cup of oats. Labels: 'Rolled 90 g', 'Quick 90 g', 'Steel-cut 180 g', 'Instant 80 g'. Side lighting shows the different textures.",
+      },
+      { kind: "h2", text: "Why steel-cut weighs twice as much" },
+      {
+        kind: "p",
+        text:
+          "Rolled and quick oats are mostly air. Each flake holds its shape, leaving gaps. Steel-cut is solid grain chopped into pieces, with much less air between them. The same cup volume packs in nearly twice the mass.",
+      },
+      { kind: "h2", text: "Can I swap them in a recipe?" },
+      {
+        kind: "ul",
+        items: [
+          "Rolled ↔ quick: usually yes. Cookies will be less chewy with quick. Granola will be finer. Overnight oats work with either.",
+          "Rolled → steel-cut in baking: no. Steel-cut needs cooking before it softens. Baked goods will crunch.",
+          "Steel-cut → rolled in stovetop oatmeal: yes, but cook time drops from 25 minutes to 10. Texture goes from chewy to creamy.",
+          "Instant → anything in baking: no. The texture is too soft and breaks down.",
+        ],
+      },
+      { kind: "h2", text: "What about gluten-free oats?" },
+      {
+        kind: "p",
+        text:
+          "Same weights per cup. Gluten-free oats are normal oats grown and processed separately from wheat, so the weight and texture match standard oats of the same cut.",
+      },
+      {
+        kind: "link",
+        text: "Open the oats cups to grams converter",
+        href: "/oats-cups-to-grams",
+        description: "Convert any oat type between cups and grams.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-measure-sticky-honey",
+    locale: "en",
+    title: "How to Measure Sticky Honey Without Losing Half in the Cup",
+    description:
+      "Honey clings to the cup. You can lose 10 percent before it makes it into your bowl. A thin oil coating fixes it. Weighing fixes it better.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 3,
+    alternateSlug: "como-medir-miel-pegajosa",
+    tags: ["honey", "measurement", "baking"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "You poured 1 cup of honey into the measuring cup. You tipped it over your bowl. A thick coat of honey stayed inside the cup. Your recipe is now short 10 percent honey, and that is the part of the sweetness it counted on.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 US cup of honey weighs 336 grams. The cleanest way to measure: weigh the honey directly. The second cleanest: coat the measuring cup or spoon with a thin layer of cooking spray or vegetable oil first. The honey slides out clean.",
+      },
+      { kind: "h2", text: "Why honey clings" },
+      {
+        kind: "p",
+        text:
+          "Honey is mostly sugar dissolved in a small amount of water. Its surface tension pulls hard against any dry surface it touches. Plastic, glass, metal: they all hold onto honey. Add a film of oil between the cup and the honey, and the surface tension breaks. The honey lets go.",
+      },
+      { kind: "h2", text: "The three working methods" },
+      { kind: "h3", text: "1. Spray-or-oil method (volume)" },
+      {
+        kind: "p",
+        text:
+          "Lightly spray the inside of the measuring cup with cooking spray. Or rub a few drops of vegetable oil around the inside with a paper towel. Pour the honey. Tip into the bowl. Almost all of it comes out.",
+      },
+      { kind: "h3", text: "2. The scale method (best)" },
+      {
+        kind: "p",
+        text:
+          "Place your mixing bowl on a kitchen scale. Hit tare. Pour honey from the jar directly into the bowl until you see the right number of grams. No measuring cup at all. No honey left behind.",
+      },
+      { kind: "h3", text: "3. The other-liquid trick" },
+      {
+        kind: "p",
+        text:
+          "If the recipe also calls for oil or butter, measure the oil or butter first. The cup is already coated. Pour the honey in next; it slides out cleanly without extra prep.",
+      },
+      {
+        kind: "image",
+        alt: "Two side-by-side measuring cups: one with honey clinging heavily to the inside walls and one that came out clean after being sprayed with cooking spray.",
+        placeholder:
+          "Two glass measuring cups on a wooden counter. Left: heavy honey residue coating the inside. Right: nearly empty, just a thin film. Caption: 'Plain cup loses 10%. Oiled cup wins.'",
+      },
+      { kind: "h2", text: "Crystallized honey" },
+      {
+        kind: "p",
+        text:
+          "Honey crystallizes when it sits at cool temperatures. It is still good. To re-liquefy, set the jar in a bowl of warm (not boiling) water for 10 minutes. Do not microwave at high power; honey can scorch.",
+      },
+      { kind: "h2", text: "Quick weights" },
+      {
+        kind: "ul",
+        items: [
+          "1 tablespoon honey = 21 grams",
+          "1/4 cup honey = 84 grams",
+          "1/2 cup honey = 168 grams",
+          "1 cup honey = 336 grams",
+          "2 cups honey = 672 grams (about 1.5 pounds)",
+        ],
+      },
+      {
+        kind: "link",
+        text: "Open the honey cups to grams converter",
+        href: "/honey-cups-to-grams",
+        description: "Convert any honey amount between cups and grams.",
+      },
+    ],
+  },
+  {
+    slug: "powdered-sugar-vs-granulated-by-weight",
+    locale: "en",
+    title: "Powdered Sugar Weighs Half of Granulated (By Cup)",
+    description:
+      "1 cup of granulated sugar weighs 200 grams. 1 cup of powdered sugar weighs 113 grams. Swapping them by volume will sweeten or starve your recipe.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "azucar-glas-vs-blanca-por-peso",
+    tags: ["sugar", "baking", "measurement"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "A recipe calls for 1 cup of sugar. You only have powdered sugar in the cabinet. You shrug and pour. The cookies come out flat and not sweet enough. The cup looked the same, but the math was not.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 US cup of granulated white sugar = 200 grams. 1 US cup of powdered (confectioners') sugar = 113 grams. The same cup, but powdered sugar weighs 43 percent less because the particles are smaller and full of air. You cannot swap them by volume.",
+      },
+      { kind: "h2", text: "Why the same cup weighs so differently" },
+      {
+        kind: "p",
+        text:
+          "Granulated sugar has uniform, dense crystals. They pack tightly into the cup. Powdered sugar is granulated sugar ground into a fine dust, then mixed with 3 percent cornstarch to keep it from clumping. The fine powder traps a lot of air. A cup of fluff weighs less than a cup of crystals.",
+      },
+      { kind: "h2", text: "When the swap is possible (and when it is not)" },
+      { kind: "h3", text: "By weight: yes, sometimes" },
+      {
+        kind: "p",
+        text:
+          "If you weigh, you can swap powdered for granulated by weight in some recipes. Frostings, glazes, and dustings expect powdered. Cakes and cookies expect granulated for structure. The sugar does different jobs in each.",
+      },
+      { kind: "h3", text: "By volume: almost never" },
+      {
+        kind: "p",
+        text:
+          "If you swap 1 cup of granulated for 1 cup of powdered, you just cut the sugar by 43 percent. The cookies will be drier and less sweet. Cookies and cakes need that sugar weight to spread, brown, and stay tender.",
+      },
+      {
+        kind: "image",
+        alt: "Two cups side by side, one heaped with white granulated sugar and one with fluffy powdered sugar, both on a kitchen scale showing different weights.",
+        placeholder:
+          "Two clear glass cups on a kitchen scale. Left: granulated sugar, scale reads 200 g. Right: powdered sugar, scale reads 113 g. Both filled to the same height. Caption: 'Same cup, half the weight.'",
+      },
+      { kind: "h2", text: "All three white sugars by the cup" },
+      {
+        kind: "ul",
+        items: [
+          "Granulated white sugar: 200 g per cup. The default for most baking.",
+          "Powdered (confectioners') sugar: 113 g per cup. Used in frostings, glazes, royal icing, and as a dusting.",
+          "Superfine (caster) sugar: about 195 g per cup. Sits between the two. Used in meringues and sponge cakes where it dissolves faster than granulated.",
+        ],
+      },
+      { kind: "h2", text: "If your recipe says powdered and you only have granulated" },
+      {
+        kind: "p",
+        text:
+          "Process granulated sugar in a clean coffee grinder or food processor for 30 seconds to make a rough powdered sugar. Add 1 teaspoon of cornstarch per cup to mimic the anti-caking. The texture is close but not exact; do not use for delicate icings.",
+      },
+      { kind: "h2", text: "If your recipe says granulated and you only have powdered" },
+      {
+        kind: "p",
+        text:
+          "No clean swap. Powdered sugar has cornstarch in it, which changes the texture of cookies and cakes. Better to wait until you have the right sugar, or pick a different recipe that uses powdered sugar (like shortbread or Mexican wedding cookies).",
+      },
+      {
+        kind: "link",
+        text: "Open the sugar cups to grams converter",
+        href: "/sugar-cups-to-grams",
+        description: "Convert any sugar between cups and grams. Pick the type.",
+      },
+    ],
+  },
+  {
+    slug: "wet-vs-dry-measuring-cups",
+    locale: "en",
+    title: "Wet vs Dry Measuring Cups: When the Difference Actually Matters",
+    description:
+      "A wet measuring cup and a dry measuring cup hold the same volume. They are not the same tool. Using the wrong one for baking will throw off the recipe.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "tazas-medidoras-liquidos-vs-secos",
+    tags: ["measurement", "baking", "tools"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Your kitchen drawer has two kinds of measuring cups. The glass one with the spout is for liquids. The flat metal or plastic ones are for solids. They both say \"1 cup\" on them. They both hold 240 ml. So why have both?",
+      },
+      {
+        kind: "callout",
+        text:
+          "Wet (liquid) cups and dry cups hold the same volume, but the shape and how you measure are different. Liquid cups are taller with markings below the rim and a spout for pouring. Dry cups fill to the rim so you can level the top with a knife. Using one for the other introduces real error in baking.",
+      },
+      { kind: "h2", text: "What each cup is designed for" },
+      { kind: "h3", text: "Wet (liquid) measuring cup" },
+      {
+        kind: "p",
+        text:
+          "Usually clear glass or plastic, with a spout. The markings stop short of the top so you have headroom and can read the meniscus (the curve where liquid touches the side). Used for water, milk, oil, broth, juice, honey, any pourable liquid.",
+      },
+      { kind: "h3", text: "Dry measuring cup" },
+      {
+        kind: "p",
+        text:
+          "Usually metal or plastic. Each cup holds exactly its labeled amount, level with the rim. You fill it past the top, then drag a knife across to scrape off the extra. Used for flour, sugar, oats, nuts, anything you can level.",
+      },
+      {
+        kind: "image",
+        alt: "A glass liquid measuring cup with milk and a metal dry measuring cup with flour leveled flat with a knife, side by side.",
+        placeholder:
+          "Side-by-side on a kitchen counter. Left: tall glass cup with milk, showing the meniscus at the 1-cup line. Right: flat metal cup heaped with flour and a knife laid across the top, ready to scrape. Caption: 'Different tools, same volume, different jobs.'",
+      },
+      { kind: "h2", text: "What goes wrong when you mix them up" },
+      { kind: "h3", text: "Liquid in a dry cup" },
+      {
+        kind: "p",
+        text:
+          "No spout to pour from cleanly. The cup is filled to the very top, so you spill on the way to the bowl. Reading the meniscus is hard because the cup is full. Result: usually under-measures because some liquid spills.",
+      },
+      { kind: "h3", text: "Flour in a liquid cup" },
+      {
+        kind: "p",
+        text:
+          "The markings stop below the rim. You cannot level the flour, because there is no flat reference to scrape against. You either eyeball the line (inaccurate) or fill to the top (over-measures by 5 to 10 percent). Either way, the cup ends up heavier than the recipe expected.",
+      },
+      { kind: "h2", text: "When the mix-up does not matter" },
+      {
+        kind: "p",
+        text:
+          "For cooking, the difference disappears in the pot. Pasta sauce, soup, stew, stir-fry: a tablespoon of variance changes nothing. The cups are interchangeable for casual cooking.",
+      },
+      {
+        kind: "p",
+        text:
+          "For baking, the difference shows. Cake recipes, cookies, bread, pastry: use the right cup. Or skip cups entirely and weigh.",
+      },
+      { kind: "h2", text: "The shortcut" },
+      {
+        kind: "p",
+        text:
+          "If you bake often, owning both is worth the $10 to $20. If you bake rarely, a digital kitchen scale does the job of both for under $30. The scale never asks which cup you grabbed.",
+      },
+      {
+        kind: "link",
+        text: "Open the cups to grams converter",
+        href: "/cups-to-grams",
+        description: "Skip the cup question. Pick your food, get the weight.",
+      },
+    ],
+  },
+  {
+    slug: "yeast-packets-vs-tablespoons",
+    locale: "en",
+    title: "Yeast: Why 1 Packet Is Not 1 Tablespoon",
+    description:
+      "A standard packet of yeast is 7 grams or about 2 and 1/4 teaspoons. That is 3/4 of a tablespoon, not a full one. Using a full tablespoon adds 33 percent more yeast.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "levadura-sobres-vs-cucharadas",
+    tags: ["yeast", "baking", "measurement", "bread"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Bread recipe says \"1 packet of yeast.\" You opened the cabinet and found a jar of yeast, not a packet. So you measured a tablespoon, because that is the closest measure you remembered. The bread rose too fast, tasted yeasty, and collapsed in the oven. You used 33 percent too much.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 standard packet of yeast = 7 grams = 2 and 1/4 teaspoons = 3/4 of a tablespoon. NOT a full tablespoon. A full tablespoon of yeast is 9 grams, about 33 percent more than a packet. The math: 1 teaspoon of yeast weighs 3 grams. 3 teaspoons make a tablespoon, which makes 9 grams.",
+      },
+      { kind: "h2", text: "The packet math, written out" },
+      {
+        kind: "ul",
+        items: [
+          "1 yeast packet = 7 g = 2 1/4 tsp = 1/4 oz",
+          "1 tsp yeast = 3 g (roughly)",
+          "1 tbsp yeast = 9 g = 1 1/3 packets",
+          "2 packets = 14 g = 4 1/2 tsp = 1 1/2 tbsp",
+          "3 packets = 21 g = about 1 oz (a half-strip of packets)",
+        ],
+      },
+      { kind: "h2", text: "Active dry vs instant: do not confuse them" },
+      {
+        kind: "p",
+        text:
+          "Two main yeast types fill home cupboards:",
+      },
+      { kind: "h3", text: "Active dry yeast" },
+      {
+        kind: "p",
+        text:
+          "Larger grains. Needs to be \"proofed\" in warm water with sugar before you mix it into dough. The recipe usually says \"dissolve in warm water for 5 minutes.\" If it foams, the yeast is alive.",
+      },
+      { kind: "h3", text: "Instant yeast (sometimes called rapid-rise or bread machine yeast)" },
+      {
+        kind: "p",
+        text:
+          "Smaller grains. Mixes directly into the flour, no proofing needed. Acts about 25 percent faster than active dry. Convenient for hands-on baking.",
+      },
+      { kind: "h3", text: "Swap rule" },
+      {
+        kind: "p",
+        text:
+          "To use active dry where the recipe calls for instant, multiply by 1.25 (use 25 percent more). To use instant where the recipe calls for active dry, multiply by 0.75 (use 25 percent less). By weight, they are close enough at small amounts that 1 packet of either works in most recipes.",
+      },
+      {
+        kind: "image",
+        alt: "A 7-gram yeast packet, a teaspoon measure with yeast, and a kitchen scale showing 7 grams of yeast, all arranged on a wooden board.",
+        placeholder:
+          "Flat-lay: one yeast packet (Fleischmann's-style red and yellow), a teaspoon with yeast piled in it, and a digital scale showing 7 g. Caption: 'One packet, three ways to measure.'",
+      },
+      { kind: "h2", text: "Fresh yeast (cake yeast)" },
+      {
+        kind: "p",
+        text:
+          "Less common in home kitchens. Sold as a small wet block in the refrigerator section. The conversion: 1 packet of dry yeast = about 17 grams of fresh yeast. The math is 1:2.5 (dry to fresh) by weight. Fresh yeast lasts only 2 to 3 weeks; dry yeast lasts a year in the fridge.",
+      },
+      { kind: "h2", text: "Storing yeast so it stays alive" },
+      {
+        kind: "ul",
+        items: [
+          "Sealed packets: store at room temperature until the expiration date on the package.",
+          "Open jars or strip packs: transfer to a clean airtight container, store in the fridge for up to 4 months, or freezer for up to a year.",
+          "Always proof old yeast (warm water + pinch of sugar, wait 5 minutes for foam). If it does not foam, it is dead.",
+        ],
+      },
+      {
+        kind: "link",
+        text: "Open the tablespoons to cups converter",
+        href: "/tablespoons-to-cups",
+        description: "Convert tablespoons, teaspoons, cups, and milliliters.",
+      },
+    ],
+  },
+  {
+    slug: "reading-metric-recipes-with-us-cups",
+    locale: "en",
+    title: "How to Read a Metric Recipe When You Only Have US Cups",
+    description:
+      "European and Australian recipes give grams and milliliters. US cookware gives cups and tablespoons. Here is the cheat sheet to translate without ruining the recipe.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 5,
+    alternateSlug: "recetas-metricas-con-tazas-estadounidenses",
+    tags: ["measurement", "international", "fundamentals"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "You found a perfect French tart recipe. The flour amount is 250 grams. The butter is 200 grams. The oven says 180°C. None of those numbers match what you have in your kitchen. A few simple conversions get you to a US-cup recipe you can actually follow.",
+      },
+      {
+        kind: "callout",
+        text:
+          "The fastest translation: buy a kitchen scale. 250 grams of flour is 250 grams, no matter what cup you own. Failing that, learn five conversions and you can read almost any European recipe: 1 US cup = 237 ml, 1 stick of butter = 113 g, 180°C = 350°F, 200°C = 400°F, and 1 tablespoon = 15 ml.",
+      },
+      { kind: "h2", text: "The five conversions that cover most recipes" },
+      {
+        kind: "ol",
+        items: [
+          "Flour: 120 grams = 1 US cup. So 250 g flour ÷ 120 = about 2 cups plus 1 tablespoon.",
+          "Sugar: 200 grams = 1 US cup. So 100 g sugar = 1/2 cup. So 250 g sugar = 1 1/4 cups.",
+          "Butter: 113 grams = 1 US stick (1/2 cup). So 200 g butter = about 1 3/4 sticks, or 7/8 cup.",
+          "Oven: 180°C = 350°F. 200°C = 400°F. 220°C = 425°F. (Formula: C × 1.8 + 32 = F.)",
+          "Volume: 1 US cup = 237 ml. 1 tablespoon = 15 ml. 1 teaspoon = 5 ml.",
+        ],
+      },
+      { kind: "h2", text: "Liquids are easier than solids" },
+      {
+        kind: "p",
+        text:
+          "Milliliters are space, and so are cups. The conversion is fixed for all liquids:",
+      },
+      {
+        kind: "ul",
+        items: [
+          "60 ml = 1/4 cup",
+          "120 ml = 1/2 cup",
+          "180 ml = 3/4 cup",
+          "240 ml = 1 cup (rounded; actual 237 ml)",
+          "500 ml = 2 cups plus a hair",
+          "1 liter = 4 cups plus a hair",
+        ],
+      },
+      { kind: "h2", text: "Solids are trickier" },
+      {
+        kind: "p",
+        text:
+          "Grams measure weight. Cups measure space. Each food has its own weight per cup:",
+      },
+      {
+        kind: "ul",
+        items: [
+          "All-purpose flour: 120 g per cup",
+          "Bread flour: 127 g per cup",
+          "White sugar: 200 g per cup",
+          "Brown sugar (packed): 213 g per cup",
+          "Butter: 227 g per cup (2 sticks)",
+          "Rolled oats: 90 g per cup",
+          "Cocoa powder: 85 g per cup",
+          "Honey: 336 g per cup",
+        ],
+      },
+      {
+        kind: "image",
+        alt: "A French baking recipe written in grams next to a US cup measuring set on the same kitchen counter.",
+        placeholder:
+          "A clean printout of a French tart recipe with metric measurements taped beside a set of nested US measuring cups and a digital scale. Caption: 'Two systems, one kitchen.'",
+      },
+      { kind: "h2", text: "When the recipe says \"metric cup\"" },
+      {
+        kind: "p",
+        text:
+          "An Australian or Canadian \"1 cup\" is 250 ml, not the US 237 ml. That is a 6 percent gap. For 1 metric cup, use 1 US cup plus 1 tablespoon. The math: 1 US cup (237 ml) + 1 tbsp (15 ml) = 252 ml, close enough to 250.",
+      },
+      { kind: "h2", text: "Oven temperature shortcuts" },
+      {
+        kind: "ul",
+        items: [
+          "150°C = 300°F (low)",
+          "160°C = 325°F (low)",
+          "175°C = 350°F (most baking)",
+          "180°C = 350°F (close enough)",
+          "190°C = 375°F",
+          "200°C = 400°F",
+          "220°C = 425°F",
+          "230°C = 450°F",
+        ],
+      },
+      { kind: "h2", text: "When in doubt, weigh" },
+      {
+        kind: "p",
+        text:
+          "A digital kitchen scale ends the question for solids. The recipe says 250 grams of flour, you put 250 grams of flour on the scale, done. No cup confusion, no math, no calculator needed. A simple scale costs less than a set of measuring cups and lasts 10 years.",
+      },
+      {
+        kind: "link",
+        text: "Open the milliliters to cups converter",
+        href: "/ml-to-cups",
+        description: "Quick liquid conversions between metric and US cups.",
+      },
+    ],
+  },
+  {
+    slug: "why-scale-and-cup-disagree",
+    locale: "en",
+    title: "Why Your Kitchen Scale and Measuring Cup Disagree",
+    description:
+      "You measured 1 cup of flour, then weighed it. The scale showed 145 grams. Your recipe wanted 120. Both tools are right. The cup just held more than the recipe expected.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "por-que-bascula-y-taza-no-coinciden",
+    tags: ["measurement", "tools", "baking"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "You measured 1 cup of flour. You put it on the scale to double-check. The scale showed 145 grams. The recipe wanted 120 grams. Neither tool is broken. Both are telling the truth. The two-number gap is the whole problem with cup measurement.",
+      },
+      {
+        kind: "callout",
+        text:
+          "A measuring cup tells you volume. A scale tells you weight. The same cup of flour can weigh 110 to 145 grams depending on how you scooped. The recipe writer picked one of those numbers, and there is no way to know which without weighing. The scale always wins for accuracy.",
+      },
+      { kind: "h2", text: "Why two cups of the same thing weigh differently" },
+      {
+        kind: "p",
+        text:
+          "Three things change what your cup of flour (or sugar, oats, cocoa) actually weighs:",
+      },
+      {
+        kind: "ol",
+        items: [
+          "How you scoop. Dipping the cup straight into the bag packs the food in tight, adding 10 to 25 percent more than spooning gently.",
+          "How settled the food is. A bag of flour that just got shaken in the car packs denser than one that sat still for a week.",
+          "Humidity. Flour, cocoa, and brown sugar all absorb moisture from the air. The same cup weighs more on a wet day.",
+        ],
+      },
+      { kind: "h2", text: "Which weight number is \"right\"?" },
+      {
+        kind: "p",
+        text:
+          "Whichever weight the recipe writer used. King Arthur Baking publishes 120 grams per cup of all-purpose flour. America's Test Kitchen publishes 142. Both are correct for their own kitchens; they just measure differently. When in doubt, check the recipe site for an ingredient weight chart.",
+      },
+      {
+        kind: "image",
+        alt: "A measuring cup of flour next to a kitchen scale showing 145 grams, with a label noting that the recipe wanted 120 grams.",
+        placeholder:
+          "A flat-lay shot: a metal dry-measuring cup full of flour sits next to a digital kitchen scale reading 145 g. A sticky note nearby says 'Recipe asked for 120 g.' Soft natural light.",
+      },
+      { kind: "h2", text: "When the gap matters and when it does not" },
+      { kind: "h3", text: "Does not matter" },
+      {
+        kind: "ul",
+        items: [
+          "Soups, stews, and sauces. A spoonful of variance disappears in a pot.",
+          "Rice and pasta. The cooking water absorbs the difference.",
+          "Stir-fries and casual cooking. Taste, do not measure.",
+        ],
+      },
+      { kind: "h3", text: "Matters a lot" },
+      {
+        kind: "ul",
+        items: [
+          "Cookies. A 20-gram flour mistake turns soft cookies into hockey pucks.",
+          "Cakes. Too much flour kills the rise. The cake comes out short and dry.",
+          "Bread. Hydration percentages matter. Off-weight flour throws off the dough.",
+          "Pastry. The fat-to-flour ratio decides flakiness.",
+        ],
+      },
+      { kind: "h2", text: "The fastest way to fix the gap" },
+      {
+        kind: "p",
+        text:
+          "A digital kitchen scale. Around $20, lasts years, ends the argument. Set the bowl on the scale, hit tare, pour until you see the right number. No scooping technique, no settling, no humidity worry. The scale is the single biggest accuracy upgrade you can make in the kitchen.",
+      },
+      { kind: "h2", text: "If you do not want a scale" },
+      {
+        kind: "p",
+        text:
+          "Use the spoon-and-level method consistently. Fluff the flour in the bag first, spoon it into the cup, level with a knife. Do not tap or settle. Same method every time. You will still be a few percent off the recipe writer's intent, but at least your own bakes will be consistent batch to batch.",
+      },
+      {
+        kind: "link",
+        text: "Open the cups to grams converter",
+        href: "/cups-to-grams",
+        description: "See the recipe weights for any common food, by cup.",
+      },
+    ],
+  },
+  {
     slug: "sifted-vs-unsifted-flour",
     locale: "en",
     title: "Sifted vs Unsifted Flour: The Weight Gap That Breaks Bakes",

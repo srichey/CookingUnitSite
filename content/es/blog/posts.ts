@@ -2,6 +2,598 @@ import type { BlogPost } from "@/lib/blog";
 
 export const postsEs: BlogPost[] = [
   {
+    slug: "avena-en-hojuelas-instantanea-cortada",
+    locale: "es",
+    title: "Avena en hojuelas, instantánea y cortada: mismo nombre, distinto peso",
+    description:
+      "La avena en hojuelas y la instantánea pesan cerca de 90 gramos por taza. La avena cortada al gravado pesa 180 gramos por taza. Cambiar una por otra en la receta cambia todo.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "rolled-vs-quick-vs-steel-cut-oats",
+    tags: ["avena", "reposteria", "medicion"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "El supermercado tiene cuatro estantes de avena. Todas dicen \"avena\" en el frente. La receta solo dice \"1 taza de avena\". Elegir mal puede hacer galletas que crujen como grava o avena de la noche que se queda cruda.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 taza de avena en hojuelas (tradicional) son cerca de 90 gramos. La avena instantánea pesa lo mismo. 1 taza de avena cortada al gravado, cruda, son cerca de 180 gramos, el doble, porque los pedazos se acomodan más juntos. La avena instantánea de sobres queda en medio, cerca de 80 gramos por taza.",
+      },
+      { kind: "h2", text: "Qué es realmente cada tipo" },
+      { kind: "h3", text: "Avena en hojuelas (tradicional)" },
+      {
+        kind: "p",
+        text:
+          "Granos enteros de avena al vapor y aplanados. Se ven como monedas. Tardan de 5 a 10 minutos en cocinarse. Mejor para galletas de avena, granola, crumbles y avena de la noche. 90 gramos por taza.",
+      },
+      { kind: "h3", text: "Avena instantánea (de cocción rápida)" },
+      {
+        kind: "p",
+        text:
+          "Avena en hojuelas cortada más pequeña para cocinarse en 1 a 3 minutos. Mismo peso por taza que las hojuelas. Da una textura más suave, como atole, al hornear. Casi siempre puedes cambiarla por hojuelas, pero las galletas y la granola quedan menos masticables.",
+      },
+      { kind: "h3", text: "Avena cortada al gravado (Irish oats)" },
+      {
+        kind: "p",
+        text:
+          "Granos enteros picados con cuchillas de acero, no aplanados. Parecen arroz grueso. Tiempo de cocción: 20 a 30 minutos. Se usa para avena en estufa, avena salada y platos estilo risotto. Casi nunca se usa en repostería.",
+      },
+      { kind: "h3", text: "Avena instantánea (de sobre)" },
+      {
+        kind: "p",
+        text:
+          "Precocida, secada y aplanada más fina aún. Lista en 1 minuto con agua caliente. Casi siempre viene en sobres saborizados de una porción. No se usa en repostería; la textura se deshace.",
+      },
+      {
+        kind: "image",
+        alt: "Cuatro boles pequeños en fila, cada uno con un tipo distinto de avena (hojuelas, instantánea, cortada, de sobre), etiquetados por nombre y peso por taza.",
+        placeholder:
+          "Cuatro boles blancos sobre una tabla de madera. Cada uno con una taza de avena. Etiquetas: 'Hojuelas 90 g', 'Instantánea 90 g', 'Cortada 180 g', 'De sobre 80 g'. Luz lateral muestra las distintas texturas.",
+      },
+      { kind: "h2", text: "Por qué la cortada pesa el doble" },
+      {
+        kind: "p",
+        text:
+          "Las hojuelas y la instantánea son casi puro aire. Cada hojuela mantiene su forma, dejando huecos. La cortada es grano sólido picado en pedazos, con mucho menos aire entre ellos. La misma taza guarda casi el doble de masa.",
+      },
+      { kind: "h2", text: "¿Puedo cambiarlas en una receta?" },
+      {
+        kind: "ul",
+        items: [
+          "Hojuelas ↔ instantánea: casi siempre sí. Las galletas quedan menos masticables con la instantánea. La granola queda más fina. La avena de la noche funciona con cualquiera.",
+          "Hojuelas → cortada en repostería: no. La cortada necesita cocción para ablandarse. Lo horneado va a crujir.",
+          "Cortada → hojuelas en avena de estufa: sí, pero el tiempo baja de 25 minutos a 10. La textura va de masticable a cremosa.",
+          "De sobre → cualquier cosa en repostería: no. La textura es muy suave y se deshace.",
+        ],
+      },
+      { kind: "h2", text: "¿Y la avena sin gluten?" },
+      {
+        kind: "p",
+        text:
+          "Mismos pesos por taza. La avena sin gluten es avena normal cultivada y procesada separada del trigo, así que el peso y la textura coinciden con la avena estándar del mismo corte.",
+      },
+      {
+        kind: "link",
+        text: "Abrir el conversor de tazas de avena a gramos",
+        href: "/es/avena-tazas-a-gramos",
+        description: "Convierte cualquier tipo de avena entre tazas y gramos.",
+      },
+    ],
+  },
+  {
+    slug: "como-medir-miel-pegajosa",
+    locale: "es",
+    title: "Cómo medir miel pegajosa sin perder la mitad en la taza",
+    description:
+      "La miel se pega a la taza. Puedes perder 10 por ciento antes de que llegue al bol. Una capa fina de aceite lo arregla. Pesar lo arregla mejor.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 3,
+    alternateSlug: "how-to-measure-sticky-honey",
+    tags: ["miel", "medicion", "reposteria"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Vertiste 1 taza de miel en la taza medidora. La inclinaste sobre el bol. Una capa gruesa de miel se quedó dentro. Tu receta perdió 10 por ciento de miel, y esa era la dulzura que necesitaba.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 taza estadounidense de miel pesa 336 gramos. La forma más limpia de medir: pesa la miel directo. La segunda más limpia: unta la taza o cuchara medidora con una capa fina de spray de cocina o aceite vegetal primero. La miel se desliza limpia.",
+      },
+      { kind: "h2", text: "Por qué la miel se pega" },
+      {
+        kind: "p",
+        text:
+          "La miel es casi pura azúcar disuelta en un poco de agua. Su tensión superficial jala fuerte contra cualquier superficie seca que toca. Plástico, vidrio, metal: todos sujetan la miel. Agrega una película de aceite entre la taza y la miel, y la tensión superficial se rompe. La miel se suelta.",
+      },
+      { kind: "h2", text: "Los tres métodos que funcionan" },
+      { kind: "h3", text: "1. Método de spray o aceite (por volumen)" },
+      {
+        kind: "p",
+        text:
+          "Rocía ligeramente el interior de la taza con spray de cocina. O frota unas gotas de aceite vegetal por dentro con una toalla de papel. Vierte la miel. Inclina hacia el bol. Casi toda sale.",
+      },
+      { kind: "h3", text: "2. Método de la báscula (el mejor)" },
+      {
+        kind: "p",
+        text:
+          "Pon tu bol de mezclar sobre una báscula. Dale tara. Vierte miel del frasco directo al bol hasta ver los gramos correctos. Sin taza medidora. Sin miel pegada.",
+      },
+      { kind: "h3", text: "3. El truco del otro líquido" },
+      {
+        kind: "p",
+        text:
+          "Si la receta también pide aceite o mantequilla, mide el aceite o la mantequilla primero. La taza ya queda untada. Vierte la miel después; sale limpia sin preparación extra.",
+      },
+      {
+        kind: "image",
+        alt: "Dos tazas medidoras lado a lado: una con miel pegada a las paredes y otra que salió limpia después de rociarla con spray de cocina.",
+        placeholder:
+          "Dos tazas medidoras de vidrio sobre una mesa de madera. Izquierda: miel residual cubriendo el interior. Derecha: casi vacía, solo una película fina. Pie: 'Taza normal pierde 10%. Taza untada gana.'",
+      },
+      { kind: "h2", text: "Miel cristalizada" },
+      {
+        kind: "p",
+        text:
+          "La miel se cristaliza cuando se queda en lugares frescos. Sigue siendo buena. Para volverla líquida, pon el frasco en un bol con agua tibia (no hirviendo) durante 10 minutos. No la calientes en microondas a alta potencia; se quema.",
+      },
+      { kind: "h2", text: "Pesos rápidos" },
+      {
+        kind: "ul",
+        items: [
+          "1 cucharada de miel = 21 gramos",
+          "1/4 de taza de miel = 84 gramos",
+          "1/2 taza de miel = 168 gramos",
+          "1 taza de miel = 336 gramos",
+          "2 tazas de miel = 672 gramos (cerca de 1.5 libras)",
+        ],
+      },
+      {
+        kind: "link",
+        text: "Abrir el conversor de tazas de miel a gramos",
+        href: "/es/miel-tazas-a-gramos",
+        description: "Convierte cualquier cantidad de miel entre tazas y gramos.",
+      },
+    ],
+  },
+  {
+    slug: "azucar-glas-vs-blanca-por-peso",
+    locale: "es",
+    title: "La azúcar glas pesa la mitad que la blanca (por taza)",
+    description:
+      "1 taza de azúcar blanca pesa 200 gramos. 1 taza de azúcar glas pesa 113 gramos. Cambiarlas por volumen va a endulzar de más o de menos tu receta.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "powdered-sugar-vs-granulated-by-weight",
+    tags: ["azucar", "reposteria", "medicion"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Una receta pide 1 taza de azúcar. Solo tienes azúcar glas en el armario. Encoges los hombros y la viertes. Las galletas salen planas y poco dulces. La taza se veía igual, pero las cuentas no.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 taza estadounidense de azúcar blanca granulada = 200 gramos. 1 taza estadounidense de azúcar glas (de repostero) = 113 gramos. La misma taza, pero la glas pesa 43 por ciento menos porque las partículas son más pequeñas y tienen aire. No puedes cambiarlas por volumen.",
+      },
+      { kind: "h2", text: "Por qué la misma taza pesa tan distinto" },
+      {
+        kind: "p",
+        text:
+          "La azúcar granulada tiene cristales uniformes y densos. Se acomodan apretados en la taza. La azúcar glas es azúcar granulada molida hasta polvo fino, luego mezclada con 3 por ciento de almidón de maíz para que no se apelmaze. El polvo fino atrapa mucho aire. Una taza esponjosa pesa menos que una de cristales.",
+      },
+      { kind: "h2", text: "Cuándo el cambio es posible (y cuándo no)" },
+      { kind: "h3", text: "Por peso: sí, a veces" },
+      {
+        kind: "p",
+        text:
+          "Si pesas, puedes cambiar glas por blanca por peso en algunas recetas. Glaseados, betunes y para espolvorear esperan glas. Pasteles y galletas esperan blanca para la estructura. La azúcar hace trabajos distintos en cada caso.",
+      },
+      { kind: "h3", text: "Por volumen: casi nunca" },
+      {
+        kind: "p",
+        text:
+          "Si cambias 1 taza de blanca por 1 taza de glas, acabas de quitar 43 por ciento del azúcar. Las galletas salen más secas y menos dulces. Las galletas y pasteles necesitan ese peso de azúcar para extenderse, dorarse y quedar tiernos.",
+      },
+      {
+        kind: "image",
+        alt: "Dos tazas lado a lado, una rebosante de azúcar blanca granulada y otra con azúcar glas esponjosa, ambas sobre una báscula que marca pesos diferentes.",
+        placeholder:
+          "Dos tazas de vidrio sobre una báscula. Izquierda: azúcar blanca, báscula marca 200 g. Derecha: azúcar glas, báscula marca 113 g. Llenas a la misma altura. Pie: 'Misma taza, la mitad del peso.'",
+      },
+      { kind: "h2", text: "Las tres azúcares blancas por taza" },
+      {
+        kind: "ul",
+        items: [
+          "Azúcar blanca granulada: 200 g por taza. La estándar para casi toda la repostería.",
+          "Azúcar glas (de repostero): 113 g por taza. Se usa en glaseados, betunes, royal icing y para espolvorear.",
+          "Azúcar superfina (caster): cerca de 195 g por taza. Queda entre las dos. Se usa en merengues y bizcochos esponjosos porque se disuelve más rápido que la granulada.",
+        ],
+      },
+      { kind: "h2", text: "Si tu receta dice glas y solo tienes granulada" },
+      {
+        kind: "p",
+        text:
+          "Procesa azúcar granulada en un molinillo de café limpio o procesador de alimentos por 30 segundos para hacer una glas casera. Agrega 1 cucharadita de almidón de maíz por taza para imitar el antiapelmazante. La textura queda cerca pero no exacta; no la uses para glaseados delicados.",
+      },
+      { kind: "h2", text: "Si tu receta dice granulada y solo tienes glas" },
+      {
+        kind: "p",
+        text:
+          "No hay cambio limpio. La azúcar glas tiene almidón de maíz, que cambia la textura de galletas y pasteles. Mejor espera a tener la azúcar correcta o elige una receta distinta que use azúcar glas (como shortbread o polvorones).",
+      },
+      {
+        kind: "link",
+        text: "Abrir el conversor de tazas de azúcar a gramos",
+        href: "/es/azucar-tazas-a-gramos",
+        description: "Convierte cualquier azúcar entre tazas y gramos. Elige el tipo.",
+      },
+    ],
+  },
+  {
+    slug: "tazas-medidoras-liquidos-vs-secos",
+    locale: "es",
+    title: "Tazas medidoras de líquidos vs de secos: cuándo importa la diferencia",
+    description:
+      "Una taza medidora de líquidos y una de secos guardan el mismo volumen. No son la misma herramienta. Usar la equivocada en repostería desbalancea la receta.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "wet-vs-dry-measuring-cups",
+    tags: ["medicion", "reposteria", "utensilios"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Tu cajón de cocina tiene dos tipos de tazas medidoras. La de vidrio con pico es para líquidos. Las planas de metal o plástico son para sólidos. Las dos dicen \"1 taza\". Las dos guardan 240 ml. ¿Por qué tener las dos?",
+      },
+      {
+        kind: "callout",
+        text:
+          "Las tazas de líquidos y las de secos guardan el mismo volumen, pero la forma y cómo mides es distinta. Las de líquidos son más altas con marcas debajo del borde y pico para verter. Las de secos se llenan hasta el borde para que niveles con un cuchillo. Usar una por la otra mete error real en repostería.",
+      },
+      { kind: "h2", text: "Para qué está diseñada cada taza" },
+      { kind: "h3", text: "Taza medidora de líquidos" },
+      {
+        kind: "p",
+        text:
+          "Casi siempre de vidrio claro o plástico, con pico. Las marcas paran antes del borde para que tengas margen y veas el menisco (la curva donde el líquido toca el costado). Para agua, leche, aceite, caldo, jugo, miel y cualquier líquido vertible.",
+      },
+      { kind: "h3", text: "Taza medidora de secos" },
+      {
+        kind: "p",
+        text:
+          "Casi siempre de metal o plástico. Cada taza guarda exactamente la cantidad de su etiqueta, al ras del borde. Llenas pasando el borde y luego pasas un cuchillo para raspar el exceso. Para harina, azúcar, avena, nueces y cualquier cosa que puedas nivelar.",
+      },
+      {
+        kind: "image",
+        alt: "Una taza de vidrio con leche y una taza metálica con harina nivelada con un cuchillo, lado a lado.",
+        placeholder:
+          "Lado a lado sobre una mesa. Izquierda: taza alta de vidrio con leche, mostrando el menisco en la marca de 1 taza. Derecha: taza metálica plana llena de harina con un cuchillo apoyado encima, listo para raspar. Pie: 'Distintas herramientas, mismo volumen, distintos trabajos.'",
+      },
+      { kind: "h2", text: "Qué sale mal cuando las mezclas" },
+      { kind: "h3", text: "Líquido en taza de secos" },
+      {
+        kind: "p",
+        text:
+          "No hay pico para verter limpio. La taza queda llena hasta el borde, así que derramas en el camino al bol. Leer el menisco es difícil porque la taza está llena. Resultado: casi siempre mide de menos porque parte del líquido se cae.",
+      },
+      { kind: "h3", text: "Harina en taza de líquidos" },
+      {
+        kind: "p",
+        text:
+          "Las marcas paran debajo del borde. No puedes nivelar la harina porque no hay referencia plana para raspar. O calculas la línea a ojo (impreciso) o llenas hasta arriba (mide de más entre 5 y 10 por ciento). De cualquier forma, la taza acaba más pesada de lo que la receta esperaba.",
+      },
+      { kind: "h2", text: "Cuándo no importa el error" },
+      {
+        kind: "p",
+        text:
+          "Para cocina, la diferencia se pierde en la olla. Salsa de pasta, sopa, guiso, salteado: una cucharada de diferencia no cambia nada. Las tazas son intercambiables para cocina casera.",
+      },
+      {
+        kind: "p",
+        text:
+          "Para repostería, la diferencia se nota. Recetas de pastel, galletas, pan, pastelería: usa la taza correcta. O sáltate las tazas y pesa.",
+      },
+      { kind: "h2", text: "El atajo" },
+      {
+        kind: "p",
+        text:
+          "Si horneas seguido, tener las dos vale los 10 a 20 dólares. Si horneas rara vez, una báscula digital de cocina hace el trabajo de las dos por menos de 30 dólares. La báscula nunca pregunta qué taza agarraste.",
+      },
+      {
+        kind: "link",
+        text: "Abrir el conversor de tazas a gramos",
+        href: "/es/tazas-a-gramos",
+        description: "Sáltate la pregunta de la taza. Elige tu alimento, obtén el peso.",
+      },
+    ],
+  },
+  {
+    slug: "levadura-sobres-vs-cucharadas",
+    locale: "es",
+    title: "Levadura: por qué 1 sobre no es 1 cucharada",
+    description:
+      "Un sobre estándar de levadura son 7 gramos o cerca de 2 y 1/4 cucharaditas. Es 3/4 de cucharada, no una entera. Usar una cucharada completa agrega 33 por ciento más levadura.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "yeast-packets-vs-tablespoons",
+    tags: ["levadura", "reposteria", "medicion", "pan"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "La receta de pan dice \"1 sobre de levadura\". Abriste el armario y encontraste un frasco de levadura, no sobres. Mediste una cucharada, porque era la medida más cercana que recordabas. El pan subió muy rápido, supo a levadura y se aplastó en el horno. Usaste 33 por ciento de más.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 sobre estándar de levadura = 7 gramos = 2 y 1/4 cucharaditas = 3/4 de cucharada. NO una cucharada entera. Una cucharada llena de levadura son 9 gramos, cerca de 33 por ciento más que un sobre. La cuenta: 1 cucharadita de levadura pesa 3 gramos. 3 cucharaditas hacen una cucharada, que hace 9 gramos.",
+      },
+      { kind: "h2", text: "Las cuentas del sobre, escritas" },
+      {
+        kind: "ul",
+        items: [
+          "1 sobre de levadura = 7 g = 2 1/4 cdtas = 1/4 oz",
+          "1 cdta de levadura = 3 g (cerca de)",
+          "1 cda de levadura = 9 g = 1 1/3 sobres",
+          "2 sobres = 14 g = 4 1/2 cdtas = 1 1/2 cdas",
+          "3 sobres = 21 g = cerca de 1 oz (medio tira de sobres)",
+        ],
+      },
+      { kind: "h2", text: "Levadura seca activa vs instantánea: no las confundas" },
+      {
+        kind: "p",
+        text:
+          "Dos tipos principales de levadura llenan los armarios caseros:",
+      },
+      { kind: "h3", text: "Levadura seca activa" },
+      {
+        kind: "p",
+        text:
+          "Granos más grandes. Hay que \"activarla\" en agua tibia con azúcar antes de mezclarla en la masa. La receta casi siempre dice \"disuelve en agua tibia 5 minutos\". Si hace espuma, la levadura está viva.",
+      },
+      { kind: "h3", text: "Levadura instantánea (a veces llamada rapid-rise o de máquina de pan)" },
+      {
+        kind: "p",
+        text:
+          "Granos más pequeños. Se mezcla directo con la harina, sin activar. Actúa cerca de 25 por ciento más rápido que la seca activa. Cómoda para repostería manual.",
+      },
+      { kind: "h3", text: "Regla de cambio" },
+      {
+        kind: "p",
+        text:
+          "Para usar seca activa donde la receta pide instantánea, multiplica por 1.25 (usa 25 por ciento más). Para usar instantánea donde la receta pide seca activa, multiplica por 0.75 (usa 25 por ciento menos). Por peso, son lo bastante cercanas en cantidades pequeñas que 1 sobre de cualquiera sirve en la mayoría de recetas.",
+      },
+      {
+        kind: "image",
+        alt: "Un sobre de levadura de 7 gramos, una cucharadita con levadura y una báscula marcando 7 gramos de levadura, todos sobre una tabla de madera.",
+        placeholder:
+          "Foto plana: un sobre de levadura (estilo Fleischmann's rojo y amarillo), una cucharadita con levadura encima y una báscula digital marcando 7 g. Pie: 'Un sobre, tres formas de medir.'",
+      },
+      { kind: "h2", text: "Levadura fresca (cake yeast)" },
+      {
+        kind: "p",
+        text:
+          "Menos común en cocinas caseras. Se vende como un bloque pequeño húmedo en la sección refrigerada. La conversión: 1 sobre de levadura seca = cerca de 17 gramos de levadura fresca. La cuenta es 1:2.5 (seca a fresca) por peso. La fresca dura 2 a 3 semanas; la seca dura un año en el refri.",
+      },
+      { kind: "h2", text: "Guardar levadura para que viva" },
+      {
+        kind: "ul",
+        items: [
+          "Sobres cerrados: guarda a temperatura ambiente hasta la fecha de vencimiento del paquete.",
+          "Frascos abiertos o tiras: pasa a un recipiente limpio hermético, guarda en el refri hasta 4 meses, o en congelador hasta un año.",
+          "Siempre activa la levadura vieja (agua tibia + pizca de azúcar, espera 5 minutos por espuma). Si no hace espuma, está muerta.",
+        ],
+      },
+      {
+        kind: "link",
+        text: "Abrir el conversor de cucharadas a tazas",
+        href: "/es/cucharadas-a-tazas",
+        description: "Convierte cucharadas, cucharaditas, tazas y mililitros.",
+      },
+    ],
+  },
+  {
+    slug: "recetas-metricas-con-tazas-estadounidenses",
+    locale: "es",
+    title: "Cómo leer una receta métrica cuando solo tienes tazas estadounidenses",
+    description:
+      "Las recetas europeas y australianas dan gramos y mililitros. La cocina estadounidense da tazas y cucharadas. Aquí está la guía para traducir sin arruinar la receta.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 5,
+    alternateSlug: "reading-metric-recipes-with-us-cups",
+    tags: ["medicion", "internacional", "fundamentos"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Encontraste una receta francesa perfecta de tarta. La harina son 250 gramos. La mantequilla son 200 gramos. El horno dice 180°C. Ninguno de esos números coincide con lo que tienes en tu cocina. Unas pocas conversiones simples te llevan a una receta en tazas estadounidenses que sí puedes seguir.",
+      },
+      {
+        kind: "callout",
+        text:
+          "La traducción más rápida: compra una báscula. 250 gramos de harina son 250 gramos sin importar qué taza tengas. Si no, aprende cinco conversiones y puedes leer casi cualquier receta europea: 1 taza estadounidense = 237 ml, 1 barra de mantequilla = 113 g, 180°C = 350°F, 200°C = 400°F y 1 cucharada = 15 ml.",
+      },
+      { kind: "h2", text: "Las cinco conversiones que cubren casi todo" },
+      {
+        kind: "ol",
+        items: [
+          "Harina: 120 gramos = 1 taza estadounidense. Entonces 250 g harina ÷ 120 = cerca de 2 tazas más 1 cucharada.",
+          "Azúcar: 200 gramos = 1 taza estadounidense. Entonces 100 g azúcar = 1/2 taza. Entonces 250 g azúcar = 1 1/4 tazas.",
+          "Mantequilla: 113 gramos = 1 barra estadounidense (1/2 taza). Entonces 200 g mantequilla = cerca de 1 3/4 barras, o 7/8 de taza.",
+          "Horno: 180°C = 350°F. 200°C = 400°F. 220°C = 425°F. (Fórmula: C × 1.8 + 32 = F.)",
+          "Volumen: 1 taza estadounidense = 237 ml. 1 cucharada = 15 ml. 1 cucharadita = 5 ml.",
+        ],
+      },
+      { kind: "h2", text: "Los líquidos son más fáciles que los sólidos" },
+      {
+        kind: "p",
+        text:
+          "Los mililitros son espacio, igual que las tazas. La conversión es fija para todos los líquidos:",
+      },
+      {
+        kind: "ul",
+        items: [
+          "60 ml = 1/4 taza",
+          "120 ml = 1/2 taza",
+          "180 ml = 3/4 taza",
+          "240 ml = 1 taza (redondeado; real 237 ml)",
+          "500 ml = 2 tazas y un poco más",
+          "1 litro = 4 tazas y un poco más",
+        ],
+      },
+      { kind: "h2", text: "Los sólidos son más complicados" },
+      {
+        kind: "p",
+        text:
+          "Los gramos miden peso. Las tazas miden espacio. Cada alimento tiene su propio peso por taza:",
+      },
+      {
+        kind: "ul",
+        items: [
+          "Harina común: 120 g por taza",
+          "Harina de pan: 127 g por taza",
+          "Azúcar blanca: 200 g por taza",
+          "Azúcar morena (compactada): 213 g por taza",
+          "Mantequilla: 227 g por taza (2 barras)",
+          "Avena en hojuelas: 90 g por taza",
+          "Cacao en polvo: 85 g por taza",
+          "Miel: 336 g por taza",
+        ],
+      },
+      {
+        kind: "image",
+        alt: "Una receta francesa escrita en gramos junto a un juego de tazas medidoras estadounidenses sobre la misma mesa.",
+        placeholder:
+          "Una impresión limpia de una receta francesa de tarta con medidas métricas pegada al lado de un juego de tazas medidoras estadounidenses anidadas y una báscula digital. Pie: 'Dos sistemas, una cocina.'",
+      },
+      { kind: "h2", text: "Cuando la receta dice \"taza métrica\"" },
+      {
+        kind: "p",
+        text:
+          "Una \"1 taza\" australiana o canadiense son 250 ml, no la estadounidense de 237 ml. Es 6 por ciento de diferencia. Para 1 taza métrica, usa 1 taza estadounidense más 1 cucharada. La cuenta: 1 taza estadounidense (237 ml) + 1 cda (15 ml) = 252 ml, lo bastante cerca de 250.",
+      },
+      { kind: "h2", text: "Atajos de temperatura del horno" },
+      {
+        kind: "ul",
+        items: [
+          "150°C = 300°F (baja)",
+          "160°C = 325°F (baja)",
+          "175°C = 350°F (la más usada para hornear)",
+          "180°C = 350°F (lo bastante cerca)",
+          "190°C = 375°F",
+          "200°C = 400°F",
+          "220°C = 425°F",
+          "230°C = 450°F",
+        ],
+      },
+      { kind: "h2", text: "Cuando dudes, pesa" },
+      {
+        kind: "p",
+        text:
+          "Una báscula digital de cocina termina con la pregunta para sólidos. La receta dice 250 gramos de harina, pones 250 gramos en la báscula, listo. Sin confusión de tazas, sin cuentas, sin calculadora. Una báscula simple cuesta menos que un juego de tazas y dura 10 años.",
+      },
+      {
+        kind: "link",
+        text: "Abrir el conversor de mililitros a tazas",
+        href: "/es/mililitros-a-tazas",
+        description: "Conversiones rápidas de líquidos entre métrico y tazas estadounidenses.",
+      },
+    ],
+  },
+  {
+    slug: "por-que-bascula-y-taza-no-coinciden",
+    locale: "es",
+    title: "Por qué tu báscula y tu taza medidora no coinciden",
+    description:
+      "Mediste 1 taza de harina y la pesaste. La báscula marcó 145 gramos. Tu receta quería 120. Las dos herramientas están bien. La taza solo llevaba más de lo que la receta esperaba.",
+    publishedAt: "2026-05-14",
+    readingMinutes: 4,
+    alternateSlug: "why-scale-and-cup-disagree",
+    tags: ["medicion", "utensilios", "reposteria"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Mediste 1 taza de harina. La pusiste en la báscula para revisar. La báscula marcó 145 gramos. La receta quería 120 gramos. Ninguna de las dos está rota. Las dos están diciendo la verdad. La diferencia de dos números es todo el problema con medir en taza.",
+      },
+      {
+        kind: "callout",
+        text:
+          "Una taza medidora te dice volumen. Una báscula te dice peso. La misma taza de harina puede pesar de 110 a 145 gramos según cómo cuchareaste. El autor de la receta eligió uno de esos números, y no hay forma de saber cuál sin pesar. La báscula siempre gana en precisión.",
+      },
+      { kind: "h2", text: "Por qué dos tazas de lo mismo pesan distinto" },
+      {
+        kind: "p",
+        text:
+          "Tres cosas cambian cuánto pesa de verdad tu taza de harina (o azúcar, avena, cacao):",
+      },
+      {
+        kind: "ol",
+        items: [
+          "Cómo cuchareas. Sumergir la taza directo en la bolsa compacta el alimento, sumando de 10 a 25 por ciento más que cuchararla suave.",
+          "Qué tan asentado está el alimento. Una bolsa de harina recién sacudida en el carro se acomoda más densa que una que estuvo quieta una semana.",
+          "Humedad. La harina, el cacao y la azúcar morena absorben humedad del aire. La misma taza pesa más en un día húmedo.",
+        ],
+      },
+      { kind: "h2", text: "¿Qué número de peso es el \"correcto\"?" },
+      {
+        kind: "p",
+        text:
+          "El que el autor de la receta usó. King Arthur Baking publica 120 gramos por taza de harina común. America's Test Kitchen publica 142. Los dos son correctos para sus propias cocinas; solo miden distinto. Cuando dudes, revisa la tabla de pesos de ingredientes del sitio de la receta.",
+      },
+      {
+        kind: "image",
+        alt: "Una taza medidora de harina junto a una báscula que marca 145 gramos, con una nota que dice que la receta quería 120 gramos.",
+        placeholder:
+          "Foto plana: una taza medidora de metal llena de harina junto a una báscula digital marcando 145 g. Una nota cerca dice 'La receta pedía 120 g'. Luz natural suave.",
+      },
+      { kind: "h2", text: "Cuándo importa la diferencia y cuándo no" },
+      { kind: "h3", text: "No importa" },
+      {
+        kind: "ul",
+        items: [
+          "Sopas, guisos y salsas. Una cucharada de diferencia se pierde en la olla.",
+          "Arroz y pasta. El agua de cocción absorbe la diferencia.",
+          "Salteados y cocina casual. Prueba, no midas.",
+        ],
+      },
+      { kind: "h3", text: "Importa mucho" },
+      {
+        kind: "ul",
+        items: [
+          "Galletas. Un error de 20 gramos de harina vuelve galletas suaves en pucks de hockey.",
+          "Pasteles. Demasiada harina mata la subida. El pastel sale bajo y seco.",
+          "Pan. El porcentaje de hidratación importa. Harina mal pesada desbalancea la masa.",
+          "Pastelería. La proporción grasa-harina decide la hojaldra.",
+        ],
+      },
+      { kind: "h2", text: "La forma más rápida de cerrar la diferencia" },
+      {
+        kind: "p",
+        text:
+          "Una báscula digital de cocina. Cerca de 20 dólares, dura años, termina con la discusión. Pones el bol en la báscula, das tara, viertes hasta ver el número correcto. Sin técnica de cuchareo, sin asentamiento, sin preocupación de humedad. La báscula es la mejora de precisión más grande que puedes hacer en la cocina.",
+      },
+      { kind: "h2", text: "Si no quieres báscula" },
+      {
+        kind: "p",
+        text:
+          "Usa el método de cuchareo y nivelado siempre igual. Esponja la harina en la bolsa primero, cuchareala en la taza, nivela con un cuchillo. No golpees ni asientes. Mismo método cada vez. Vas a seguir un poco lejos de la intención del autor, pero al menos tus propias horneadas van a ser consistentes entre tandas.",
+      },
+      {
+        kind: "link",
+        text: "Abrir el conversor de tazas a gramos",
+        href: "/es/tazas-a-gramos",
+        description: "Mira los pesos de receta para cualquier alimento común, por taza.",
+      },
+    ],
+  },
+  {
     slug: "harina-tamizada-vs-sin-tamizar",
     locale: "es",
     title: "Harina tamizada vs sin tamizar: la diferencia que rompe la receta",
