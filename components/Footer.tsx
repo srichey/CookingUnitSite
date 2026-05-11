@@ -12,12 +12,20 @@ export function Footer({ locale }: FooterProps) {
   const year = new Date().getFullYear();
   const privacyHref = locale === "en" ? "/privacy" : "/es/privacidad";
   const termsHref = locale === "en" ? "/terms" : "/es/terminos";
+  const faqHref = locale === "en" ? "/faq" : "/es/preguntas";
+  const blogHref = locale === "en" ? "/blog" : "/es/blog";
 
   return (
     <footer className="mt-auto border-t border-[color:var(--color-line)] bg-white/60">
       <div className="mx-auto max-w-5xl px-4 py-8 text-sm text-[color:var(--color-ink-muted)] sm:px-6">
         <p className="font-serif text-base text-[color:var(--color-ink)]">{strings.footer.tagline}</p>
-        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+        <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:flex sm:flex-wrap">
+          <Link href={faqHref} className="hover:text-[color:var(--color-ink)] hover:underline">
+            {strings.footer.faq}
+          </Link>
+          <Link href={blogHref} className="hover:text-[color:var(--color-ink)] hover:underline">
+            {strings.footer.blog}
+          </Link>
           <Link href={privacyHref} className="hover:text-[color:var(--color-ink)] hover:underline">
             {strings.footer.privacy}
           </Link>

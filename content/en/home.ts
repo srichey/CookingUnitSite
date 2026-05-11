@@ -1,5 +1,5 @@
 export const homeCopyEn = {
-  title: "Cooking Units: Convert and Scale Recipes Without Guessing",
+  title: "Kitchen Converts: Convert and Scale Recipes Without Guessing",
   metaDescription:
     "Fast cooking conversions and a smart recipe scaler. Cups, grams, tablespoons, ounces, milliliters, oven temperatures, and ingredient weights. Free and mobile-friendly.",
   h1: "Convert and scale recipes without guessing.",

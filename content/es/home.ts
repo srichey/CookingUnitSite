@@ -1,5 +1,5 @@
 export const homeCopyEs = {
-  title: "Cooking Units: Convierte y Ajusta Recetas sin Adivinar",
+  title: "Kitchen Converts: Convierte y Ajusta Recetas sin Adivinar",
   metaDescription:
     "Conversiones rápidas de cocina y un escalador de recetas inteligente. Tazas, gramos, cucharadas, onzas, mililitros, temperaturas del horno y pesos de ingredientes. Gratis y optimizado para móvil.",
   h1: "Convierte y ajusta recetas sin adivinar.",

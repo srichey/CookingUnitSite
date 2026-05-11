@@ -2,7 +2,9 @@
 // All references to the public URL go through SITE_URL so swapping the
 // production domain is a one-env-var change.
 
-export const SITE_NAME = "Cooking Units";
+export const SITE_NAME = "Kitchen Converts";
+// Short form for places where the spaced name reads oddly (URLs in copy, etc.).
+export const SITE_NAME_SHORT = "KitchenConverts";
 
 export const SITE_TAGLINE_EN =
   "Convert and scale recipes without guessing.";
@@ -11,7 +13,7 @@ export const SITE_TAGLINE_ES =
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "http://localhost:3000";
+  "https://kitchenconverts.com";
 
 export const DEFAULT_OG_IMAGE = "/opengraph-image";
 

@@ -37,6 +37,20 @@ export const PAGES: PageEntry[] = [
     changefreq: "monthly",
   },
   {
+    id: "faq",
+    kind: "guide",
+    paths: { en: "/faq", es: "/es/preguntas" },
+    priority: 0.7,
+    changefreq: "monthly",
+  },
+  {
+    id: "blog",
+    kind: "guide",
+    paths: { en: "/blog", es: "/es/blog" },
+    priority: 0.6,
+    changefreq: "weekly",
+  },
+  {
     id: "privacy",
     kind: "legal",
     paths: { en: "/privacy", es: "/es/privacidad" },
