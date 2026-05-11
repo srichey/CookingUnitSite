@@ -2,6 +2,156 @@ import type { BlogPost } from "@/lib/blog";
 
 export const postsEs: BlogPost[] = [
   {
+    slug: "como-medir-la-harina-bien",
+    locale: "es",
+    title: "Cómo medir bien la harina (cuchareo y nivelado, no sumergir)",
+    description:
+      "Casi todos los errores con la harina vienen del cuchareo. Cuchareo y nivelado pone la cantidad correcta. Sumergir compacta de más. Aquí está el truco en 30 segundos.",
+    publishedAt: "2026-05-12",
+    readingMinutes: 4,
+    alternateSlug: "how-to-measure-flour-correctly",
+    tags: ["reposteria", "medicion", "fundamentos"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Si tus galletas salieron secas o el bizcocho denso, lo primero a revisar es la harina. No la marca. La forma en que la mediste.",
+      },
+      {
+        kind: "p",
+        text:
+          "La misma taza de una taza puede llevar 110 gramos o 145 gramos de harina. Es una diferencia del 30 por ciento en la misma taza. El autor de la receta eligió uno de esos números. Si tú usaste el otro, tu bizcocho sale distinto.",
+      },
+      { kind: "h2", text: "El arreglo son dos pasos" },
+      {
+        kind: "ol",
+        items: [
+          "Esponja la harina en la bolsa con una cuchara o tenedor. La harina se asienta con el tiempo. Aflójala primero.",
+          "Cucharea la harina hacia la taza. No sumerjas la taza en la bolsa. Amontona la harina en la taza y luego nivela con el filo plano de un cuchillo.",
+        ],
+      },
+      {
+        kind: "p",
+        text:
+          "Ya está. La taza ahora tiene cerca de 120 gramos de harina común, el número que la mayoría de las recetas asume.",
+      },
+      { kind: "h2", text: "Por qué sumergir es el problema" },
+      {
+        kind: "p",
+        text:
+          "Cuando empujas la taza hacia abajo en la bolsa, la harina se compacta. El aire sale. La misma taza ahora lleva entre 130 y 145 gramos en vez de 120. Sin querer, agregaste de 10 a 25 gramos de harina. En una receta de una taza, es mucho. En una receta de tres tazas, es muchísimo.",
+      },
+      {
+        kind: "p",
+        text:
+          "Demasiada harina seca las galletas. Endurece los panqués. Achica los bizcochos. Es la razón más común de que una receta que le funcionó al autor no te funciona a ti.",
+      },
+      { kind: "h2", text: "El mejor arreglo: usa báscula" },
+      {
+        kind: "p",
+        text:
+          "Una báscula digital de cocina cuesta menos que un juego de tazas medidoras. Se paga sola la primera vez que salva una tanda. Pones el bol en la báscula, das tara y echas harina hasta llegar al número. Sin cucharear, sin nivelar, sin adivinar.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 taza de harina común son 120 gramos. 1/2 taza son 60 gramos. 2 tazas son 240 gramos. Guarda estos números; cubren casi toda la repostería casera.",
+      },
+      { kind: "h2", text: "Preguntas comunes" },
+      { kind: "h3", text: "¿1 taza de harina son 125 o 120 gramos?" },
+      {
+        kind: "p",
+        text:
+          "Los dos números aparecen en distintos sitios. King Arthur Baking, la fuente más citada en Estados Unidos, usa 120 gramos. Algunas tablas viejas usan 125 o 128. La diferencia es del 4 al 7 por ciento, pequeña pero real. Si tu receta viene de King Arthur, usa 120.",
+      },
+      { kind: "h3", text: "¿Tamizar cambia el peso?" },
+      {
+        kind: "p",
+        text:
+          "Tamizar agrega aire. Una taza de harina tamizada pesa menos, entre 100 y 110 gramos. Si la receta dice \"1 taza de harina tamizada,\" significa tamiza primero, luego mide. \"1 taza de harina, tamizada\" significa mide primero, luego tamiza. El orden importa.",
+      },
+      { kind: "h3", text: "¿Y la harina de pan o la harina para pastel?" },
+      {
+        kind: "p",
+        text:
+          "La harina de pan es un poco más densa, 127 gramos por taza. La harina para pastel es más ligera, 114 gramos por taza. La integral son 113 gramos por taza. El método de cuchareo y nivelado sirve para todas.",
+      },
+      {
+        kind: "link",
+        text: "Abre el conversor de tazas de harina a gramos",
+        href: "/es/harina-tazas-a-gramos",
+        description: "Escribe las tazas, obtén los gramos. Con valores para común, de pan, para pastel e integral.",
+      },
+    ],
+  },
+  {
+    slug: "por-que-compactar-azucar-morena",
+    locale: "es",
+    title: "Por qué debes compactar la azúcar morena (y qué pasa si no)",
+    description:
+      "Las tazas de azúcar morena asumen que la compactaste firme. Suelta pesa 30 por ciento menos y la receta sale rara. El arreglo en 60 segundos.",
+    publishedAt: "2026-05-12",
+    readingMinutes: 3,
+    alternateSlug: "why-pack-brown-sugar",
+    tags: ["reposteria", "medicion", "azucar"],
+    body: [
+      {
+        kind: "p",
+        text:
+          "Si una receta dice \"1 taza de azúcar morena,\" casi siempre quiere decir 1 taza compactada. La azúcar morena no sale así de la bolsa, y ahí es donde se pierde la receta.",
+      },
+      { kind: "h2", text: "Qué significa compactada" },
+      {
+        kind: "p",
+        text:
+          "La azúcar morena tiene melaza, lo que la hace pegajosa y crea bolsas de aire cuando la cuchareas en la taza. Suelta, esas bolsas se quedan. Compactada, presionas la azúcar con el dorso de una cuchara o la mano hasta que las bolsas se cierran.",
+      },
+      {
+        kind: "p",
+        text:
+          "Para revisar que la compactaste bien, voltea la taza. La azúcar morena debe mantener la forma de la taza un segundo antes de caer. Si cae de inmediato como una pila suelta, no estaba compactada.",
+      },
+      { kind: "h2", text: "Por qué importa" },
+      {
+        kind: "p",
+        text:
+          "La azúcar morena compactada pesa 213 gramos por taza estadounidense. Suelta pesa cerca de 145 gramos por taza. Es una diferencia del 30 por ciento. Si la receta quería 213 gramos y usaste 145, le quitaste casi un tercio del azúcar.",
+      },
+      {
+        kind: "p",
+        text:
+          "Las galletas salen más secas. Las salsas saben menos dulces. Los bizcochos salen planos. La receta sigue funcionando, pero no es la receta que escribió el autor.",
+      },
+      { kind: "h2", text: "Los arreglos rápidos" },
+      {
+        kind: "ul",
+        items: [
+          "Usa una taza con paredes rectas (no una cuchara curva). Compacta mejor.",
+          "Presiona con el dorso de una cuchara, el fondo de una taza más pequeña o los dedos limpios.",
+          "Nivela el top con un cuchillo después de compactar.",
+          "O sáltate todo eso y pesa: 213 gramos son 1 taza compactada.",
+        ],
+      },
+      { kind: "h2", text: "¿Y si mi azúcar morena está dura?" },
+      {
+        kind: "p",
+        text:
+          "La azúcar morena dura sigue pesando lo mismo por taza una vez compactada, pero cuesta compactarla. Para ablandarla: pon una toalla de papel húmeda encima en un bol apto para microondas y calienta 20 segundos. O pon una rebanada de pan en la bolsa de un día para otro.",
+      },
+      {
+        kind: "callout",
+        text:
+          "1 taza de azúcar morena compactada = 213 gramos. 1/2 taza compactada = 107 gramos. 2 tazas compactadas = 426 gramos.",
+      },
+      {
+        kind: "link",
+        text: "Abre el conversor de tazas de azúcar morena a gramos",
+        href: "/es/azucar-morena-tazas-a-gramos",
+        description: "Escribe tazas o gramos y mira el otro número. Valor compactado incluido.",
+      },
+    ],
+  },
+  {
     slug: "por-que-los-panaderos-pesan-ingredientes",
     locale: "es",
     title: "Por qué los panaderos pesan los ingredientes en vez de usar tazas",

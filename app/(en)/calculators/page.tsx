@@ -40,6 +40,8 @@ export default function CalculatorsPage() {
         groups={copy.groups}
         liveBadge={copy.liveBadge}
         soonBadge={copy.soonBadge}
+        searchPlaceholder="Search calculators (e.g. flour, cups, oven)"
+        searchEmptyLabel="No calculators match your search yet. Try a different word, or use the navigation above."
       />
 
       <p className="mt-12 max-w-prose text-sm text-[color:var(--color-ink-muted)]">

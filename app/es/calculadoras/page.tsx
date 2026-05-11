@@ -40,6 +40,8 @@ export default function CalculadorasPage() {
         groups={copy.groups}
         liveBadge={copy.liveBadge}
         soonBadge={copy.soonBadge}
+        searchPlaceholder="Busca una calculadora (ej. harina, tazas, horno)"
+        searchEmptyLabel="No hay calculadoras que coincidan con tu búsqueda. Prueba otra palabra o usa el menú de arriba."
       />
 
       <p className="mt-12 max-w-prose text-sm text-[color:var(--color-ink-muted)]">
