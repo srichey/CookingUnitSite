@@ -13,6 +13,7 @@ import { recipeScalerCopyEs as copy } from "@/content/es/escalador-de-recetas";
 
 const PATH = "/es/escalador-de-recetas";
 const ALT_PATH = "/recipe-scaler";
+const LAST_UPDATED = "2026-05-12";
 
 export const metadata: Metadata = buildMetadata({
   title: copy.title,
@@ -25,6 +26,7 @@ export const metadata: Metadata = buildMetadata({
 export default function Page() {
   const ldBreadcrumb = breadcrumbSchema([
     { name: "Inicio", path: "/es" },
+    { name: "Calculadoras", path: "/es/calculadoras" },
     { name: "Escalador de recetas", path: PATH },
   ]);
   const ldFaq = faqSchema(copy.faqs);
@@ -36,28 +38,48 @@ export default function Page() {
   });
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
+    <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
       <nav aria-label="Breadcrumb" className="mb-3 text-sm text-[color:var(--color-ink-muted)]">
         <Link href="/es" className="hover:text-[color:var(--color-ink)] hover:underline">
           Inicio
         </Link>{" "}
+        /{" "}
+        <Link href="/es/calculadoras" className="hover:text-[color:var(--color-ink)] hover:underline">
+          Calculadoras
+        </Link>{" "}
         / <span className="text-[color:var(--color-ink)]">Escalador de recetas</span>
       </nav>
 
-      <h1 className="font-serif text-3xl font-semibold leading-tight sm:text-4xl">
-        {copy.h1}
-      </h1>
-      <p className="mt-3 max-w-prose text-base text-[color:var(--color-ink-muted)] sm:text-lg">
-        {copy.intro}
-      </p>
+      {/* Hero with subtle warm blob */}
+      <div className="relative isolate">
+        <span
+          aria-hidden="true"
+          className="kc-hero-blob"
+          style={{ width: 340, height: 340, top: -80, left: -60, zIndex: -1 }}
+        />
+        <h1 className="font-serif text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+          {copy.h1}
+        </h1>
+        <p className="mt-4 max-w-prose text-base text-[color:var(--color-ink-soft)] sm:text-lg">
+          {copy.intro}
+        </p>
+      </div>
 
-      <div className="mt-6">
+      {/* Calculator */}
+      <div className="mt-8">
         <RecipeScalerForm locale="es" />
       </div>
 
-      <p className="mt-6 max-w-prose text-base text-[color:var(--color-ink)]">
-        <strong className="font-semibold">Respuesta corta.</strong> {copy.directAnswer}
-      </p>
+      {/* TL;DR callout */}
+      <aside
+        aria-label="Respuesta corta"
+        className="mt-8 rounded-lg border-l-4 border-[color:var(--color-warm)] bg-[color:var(--color-warm-soft)]/60 p-4 shadow-[var(--shadow-soft)]"
+      >
+        <p className="text-xs font-semibold uppercase tracking-wider text-[color:var(--color-warm-strong)]">
+          Respuesta corta
+        </p>
+        <p className="mt-1 text-base text-[color:var(--color-ink)]">{copy.directAnswer}</p>
+      </aside>
 
       <AdSlot size="inline" locale="es" />
 
@@ -103,26 +125,46 @@ export default function Page() {
         </dl>
       </section>
 
+      <section className="mt-10 max-w-prose">
+        <h2 className="font-serif text-xl font-semibold">{copy.related.title}</h2>
+        <ul className="mt-3 space-y-1">
+          {copy.related.items.map((r) => (
+            <li key={r.href}>
+              <Link
+                href={r.href}
+                className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
+              >
+                {r.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <p className="mt-10 max-w-prose text-sm text-[color:var(--color-ink-muted)]">
-        Need this tool in English?{" "}
-        <Link href={ALT_PATH} hrefLang="en-US" className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]">
-          Open the recipe scaler
+        <Link
+          href={ALT_PATH}
+          hrefLang="en-US"
+          className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
+        >
+          Need this tool in English? Open the recipe scaler.
         </Link>
-        .
       </p>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldBreadcrumb) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldFaq) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldWebApp) }}
-      />
+      <p className="mt-8 text-xs text-[color:var(--color-ink-muted)]">
+        Última actualización:{" "}
+        <time dateTime={LAST_UPDATED}>
+          {new Date(LAST_UPDATED).toLocaleDateString("es-419", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </time>
+      </p>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldBreadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldFaq) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldWebApp) }} />
     </div>
   );
 }

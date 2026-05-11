@@ -165,61 +165,61 @@ export const postsEn: BlogPost[] = [
       {
         kind: "p",
         text:
-          "If you have ever made the same cookie recipe twice and gotten different cookies, the problem was probably the flour. Not the brand of flour. The cup of it.",
+          "If you have made the same cookie recipe twice and ended up with different cookies, the flour is the first place to look. Not the brand. The cup of it.",
       },
       {
         kind: "p",
         text:
-          "Volume measurement is fast and feels intuitive, but it carries an honest 10 to 25 percent error for dry ingredients. The same one-cup measure can hold 110 grams of all-purpose flour or 145 grams of all-purpose flour, depending on whether you spooned it gently or scooped it tightly. That spread is the difference between tender and tough.",
+          "Measuring by cup is fast, but it can be off by 10 to 25 percent for dry foods. The same one-cup measure can hold 110 grams of flour or 145 grams of flour. It depends on how you scoop. That gap is the difference between soft and tough.",
       },
       { kind: "h2", text: "What changes between two cups of the same thing" },
       {
         kind: "ul",
         items: [
-          "Scoop method. Dipping the cup into the bag packs more flour in than spooning it.",
-          "Settling. A bag of flour shaken on the way home from the store packs denser than one left undisturbed.",
-          "Humidity. Flour absorbs moisture from the air on a wet day and weighs slightly more for the same volume.",
-          "Brand. King Arthur AP flour and another brand's AP flour can have different particle sizes.",
+          "How you scoop. Pushing the cup into the bag packs more flour than spooning it in.",
+          "Settling. A bag of flour that got shaken on the way home packs tighter than one that sat still.",
+          "Humidity. Flour soaks up water from the air on a wet day. It weighs a little more for the same cup.",
+          "Brand. One brand's flour can have a different grain size than another.",
         ],
       },
       {
         kind: "p",
         text:
-          "Sugar is more forgiving because the crystals pack consistently. Brown sugar is the opposite because it is supposed to be pressed in firmly. Cocoa powder is a nightmare because it clumps. Honey is fine by volume but messy. The general rule: the more a recipe depends on the exact ratio, the more weight matters.",
+          "Sugar is more forgiving because the grains pack the same way each time. Brown sugar is the opposite; it has to be pressed in firmly. Cocoa powder clumps. Honey works fine by volume but makes a mess. The rule of thumb: the more a recipe depends on exact ratios, the more weight matters.",
       },
-      { kind: "h2", text: "Why grams solve the problem" },
+      { kind: "h2", text: "Why grams fix the problem" },
       {
         kind: "p",
         text:
-          "A gram is a gram. It does not care how you scooped, how the bag was shaken, or what the humidity is. When a recipe says 120 grams of flour and you put 120 grams of flour on the scale, you have what the recipe writer intended.",
+          "A gram is a gram. It does not care how you scooped, how the bag was shaken, or what the weather is. When a recipe says 120 grams of flour and you put 120 grams on the scale, you have what the recipe writer wanted.",
       },
       {
         kind: "p",
         text:
-          "There is a second benefit: weight measurement scales cleanly. Doubling a recipe in cups means double the scoop variability. Doubling a recipe in grams means moving a number. This is also why our recipe scaler returns clean fractions for volume and exact decimals for weight: if you are scaling and you have a scale, you should use the scale.",
+          "There is a second win: weight scales clean. Doubling a recipe in cups doubles the scoop error too. Doubling in grams is just one number times two. That is why our recipe scaler shows clean fractions for cups and exact decimals for grams. If you have a scale, use the grams.",
       },
-      { kind: "h2", text: "The tool that fixes both problems" },
+      { kind: "h2", text: "The tool that fixes both" },
       {
         kind: "p",
         text:
-          "A digital kitchen scale, around 20 to 40 US dollars. Look for one with gram precision, a tare button (so you can zero out the bowl), a 5-kilogram capacity, and a flat surface large enough for a mixing bowl. That is it. No app, no Bluetooth, no Wi-Fi.",
+          "A digital kitchen scale, around 20 to 40 US dollars. Look for one with gram precision, a tare button (so you can zero out the bowl), 5 kilograms of capacity, and a flat top big enough for a mixing bowl. That is it. No app, no Bluetooth, no Wi-Fi.",
       },
       {
         kind: "callout",
         text:
-          "If your recipe gives weights, use them. If it only gives cups, you can convert with our cups-to-grams tool (coming soon) and write the weights into the recipe so you only have to do it once.",
+          "If your recipe gives weights, use them. If it only gives cups, convert with our cups-to-grams tool and write the weights into the recipe so you only do it once.",
       },
       { kind: "h2", text: "When cups are fine" },
       {
         kind: "p",
         text:
-          "Soup, stews, stir-fries, pasta, rice: anywhere that a 10 percent difference in seasoning or starch will not break the dish, cups are fine. The cookbook industry will not collapse if you measure broth in cups. The reason bakers care is that bread, pastry, cookies, and cakes are chemistry, and chemistry needs ratios.",
+          "Soup, stews, stir-fries, pasta, rice: anywhere a 10 percent gap in seasoning or starch will not break the dish, cups are fine. Bakers care because bread, pastry, cookies, and cakes are chemistry. Chemistry needs ratios.",
       },
-      { kind: "h2", text: "Practical next step" },
+      { kind: "h2", text: "If you only do one thing" },
       {
         kind: "p",
         text:
-          "If you only do one thing, weigh the flour. It is the ingredient with the biggest volume-to-weight spread in most recipes and the one whose error compounds the most. Salt and sugar are usually fine in cups for everyday baking. Flour is where the wins are.",
+          "Weigh the flour. It has the biggest volume-to-weight gap of any common kitchen food. The error grows in every batch. Salt and sugar are usually fine in cups for everyday baking. The big wins live in the flour.",
       },
       {
         kind: "link",

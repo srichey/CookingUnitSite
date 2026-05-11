@@ -165,61 +165,61 @@ export const postsEs: BlogPost[] = [
       {
         kind: "p",
         text:
-          "Si alguna vez hiciste la misma receta de galletas dos veces y obtuviste galletas diferentes, lo más probable es que el problema fuera la harina. No la marca. La taza.",
+          "Si hiciste la misma receta de galletas dos veces y salieron distintas, la harina es el primer lugar donde buscar. No la marca. La taza.",
       },
       {
         kind: "p",
         text:
-          "La medida por volumen es rápida y se siente intuitiva, pero arrastra un error real de 10 a 25 por ciento para ingredientes secos. La misma taza puede contener 110 gramos de harina común o 145 gramos de harina común, dependiendo de si la cuchareaste suavemente o la sumergiste con presión. Esa diferencia es la que separa una galleta tierna de una dura.",
+          "Medir por taza es rápido, pero puede fallar entre 10 y 25 por ciento con alimentos secos. La misma taza puede llevar 110 gramos de harina o 145 gramos de harina. Depende de cómo cuchareas. Esa diferencia es la que separa una galleta suave de una dura.",
       },
       { kind: "h2", text: "Qué cambia entre dos tazas de lo mismo" },
       {
         kind: "ul",
         items: [
-          "Método de cuchareo. Sumergir la taza en la bolsa compacta más harina que cuchararla.",
-          "Asentamiento. Una bolsa de harina sacudida al regresar de la tienda queda más densa que una que estuvo quieta.",
-          "Humedad. La harina absorbe humedad del aire en días lluviosos y pesa un poco más para el mismo volumen.",
-          "Marca. La harina común de una marca y la de otra pueden tener tamaños de partícula distintos.",
+          "Cómo cuchareas. Sumergir la taza en la bolsa compacta más harina que llenarla con cuchara.",
+          "Asentamiento. Una bolsa de harina que se sacudió al volver de la tienda queda más compacta que una que estuvo quieta.",
+          "Humedad. La harina absorbe agua del aire en días lluviosos. Pesa un poco más en la misma taza.",
+          "Marca. La harina de una marca puede tener un tamaño de grano distinto que otra.",
         ],
       },
       {
         kind: "p",
         text:
-          "El azúcar es más indulgente porque los cristales se acomodan de forma consistente. La azúcar morena es lo opuesto porque debe presionarse con firmeza. El cacao en polvo es pesadilla porque se apelmaza. La miel funciona bien por volumen pero ensucia. La regla general: cuanto más depende una receta de la proporción exacta, más importa el peso.",
+          "El azúcar perdona más porque los granos se acomodan igual cada vez. La azúcar morena es lo contrario: hay que apretarla con firmeza. El cacao se apelmaza. La miel se mide bien por volumen pero ensucia. La regla: cuanto más depende la receta de proporciones exactas, más importa el peso.",
       },
-      { kind: "h2", text: "Por qué los gramos resuelven el problema" },
+      { kind: "h2", text: "Por qué los gramos arreglan el problema" },
       {
         kind: "p",
         text:
-          "Un gramo es un gramo. No le importa cómo cuchareaste, cómo se sacudió la bolsa ni la humedad. Cuando una receta dice 120 gramos de harina y pones 120 gramos de harina en la báscula, tienes lo que el autor de la receta tenía en mente.",
+          "Un gramo es un gramo. No le importa cómo cuchareaste, cómo se sacudió la bolsa ni qué clima hace. Cuando la receta dice 120 gramos de harina y pones 120 gramos en la báscula, tienes lo que el autor quería.",
       },
       {
         kind: "p",
         text:
-          "Hay un segundo beneficio: el peso escala limpio. Duplicar una receta en tazas duplica también la variabilidad del cuchareo. Duplicar una receta en gramos es mover un número. Por eso nuestro escalador devuelve fracciones limpias para volumen y decimales exactos para peso: si estás ajustando y tienes báscula, usa la báscula.",
+          "Hay un segundo beneficio: el peso escala limpio. Duplicar una receta en tazas también duplica el error de cuchareo. Duplicar en gramos es un número por dos. Por eso nuestro escalador muestra fracciones limpias para tazas y decimales exactos para gramos. Si tienes báscula, usa los gramos.",
       },
-      { kind: "h2", text: "La herramienta que arregla ambos problemas" },
+      { kind: "h2", text: "La herramienta que arregla ambas cosas" },
       {
         kind: "p",
         text:
-          "Una báscula digital de cocina, cerca de 20 a 40 dólares. Busca una con precisión al gramo, botón de tara (para poner a cero el bol), capacidad de 5 kilos y superficie plana lo bastante grande para un bol de mezclar. Eso es todo. Sin app, sin Bluetooth, sin Wi-Fi.",
+          "Una báscula digital de cocina, cerca de 20 a 40 dólares. Busca una con precisión al gramo, botón de tara (para poner el bol a cero), 5 kilos de capacidad y una superficie plana lo bastante grande para un bol de mezclar. Eso es todo. Sin app, sin Bluetooth, sin Wi-Fi.",
       },
       {
         kind: "callout",
         text:
-          "Si tu receta da pesos, úsalos. Si solo da tazas, puedes convertir con nuestra herramienta de tazas a gramos (próximamente) y anotar los pesos en la receta para no tener que volver a hacerlo.",
+          "Si tu receta da pesos, úsalos. Si solo da tazas, convierte con nuestra herramienta de tazas a gramos y anota los pesos en la receta para no volver a hacerlo.",
       },
       { kind: "h2", text: "Cuándo las tazas están bien" },
       {
         kind: "p",
         text:
-          "Sopas, guisos, salteados, pasta, arroz: en cualquier preparación donde una diferencia del 10 por ciento en sazón o almidón no rompe el plato, las tazas están bien. La industria del libro de cocina no se va a caer porque midas caldo en tazas. La razón por la que los panaderos sí se preocupan es que el pan, la pastelería, las galletas y los pasteles son química, y la química necesita proporciones.",
+          "Sopas, guisos, salteados, pasta, arroz: en cualquier plato donde un 10 por ciento de diferencia en sazón o almidón no lo rompe, las tazas están bien. Los panaderos sí se preocupan porque el pan, la pastelería, las galletas y los bizcochos son química. La química necesita proporciones.",
       },
-      { kind: "h2", text: "Siguiente paso práctico" },
+      { kind: "h2", text: "Si solo vas a hacer una cosa" },
       {
         kind: "p",
         text:
-          "Si solo vas a hacer una cosa, pesa la harina. Es el ingrediente con la mayor variación entre volumen y peso en la mayoría de recetas y el que más arrastra error compuesto. La sal y el azúcar suelen estar bien en tazas para la repostería casera diaria. Donde están las ganancias es en la harina.",
+          "Pesa la harina. Tiene la mayor diferencia entre volumen y peso de cualquier alimento común. El error crece en cada tanda. La sal y el azúcar suelen estar bien en tazas para la repostería diaria. Las grandes ganancias están en la harina.",
       },
       {
         kind: "link",
