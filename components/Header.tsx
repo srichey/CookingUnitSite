@@ -34,10 +34,21 @@ export function Header({ locale }: HeaderProps) {
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link
           href={homeHref}
-          className="flex items-center gap-2 font-serif text-lg font-semibold text-[color:var(--color-ink)] whitespace-nowrap"
+          aria-label={SITE_NAME}
+          className="flex items-center gap-2 text-[color:var(--color-ink)] whitespace-nowrap"
         >
-          <span aria-hidden="true" className="text-xl">🥄</span>
-          <span>{SITE_NAME}</span>
+          {/* SVG is already a vector; serve directly from /public without next/image. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/kitchenconverts-logo.svg"
+            alt=""
+            width={40}
+            height={40}
+            className="h-9 w-9 rounded-md shadow-[var(--shadow-soft)] sm:h-10 sm:w-10"
+          />
+          <span className="hidden font-serif text-lg font-semibold sm:inline">
+            {SITE_NAME}
+          </span>
         </Link>
         <nav
           className="flex items-center gap-0.5 sm:gap-1"

@@ -15,7 +15,7 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
   "https://kitchenconverts.com";
 
-export const DEFAULT_OG_IMAGE = "/opengraph-image";
+export const DEFAULT_OG_IMAGE = "/opengraph-image.png";
 
 // AdSense client ID. Empty by default; flip on by setting NEXT_PUBLIC_ADSENSE_CLIENT
 // in .env.production once approved. Placeholders render either way.
