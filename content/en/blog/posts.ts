@@ -4,13 +4,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "rolled-vs-quick-vs-steel-cut-oats",
     locale: "en",
+    author: "S. Richey",
     title: "Rolled vs Quick vs Steel-Cut Oats: Same Name, Different Weight",
     description:
       "Rolled and quick oats both weigh about 90 grams per cup. Steel-cut oats weigh 180 grams per cup. Swapping one for another in a recipe changes everything.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-05",
     readingMinutes: 4,
     alternateSlug: "avena-en-hojuelas-instantanea-cortada",
     tags: ["oats", "baking", "measurement"],
+    sources: [
+      { label: "Quaker Oats: Oats and grains", url: "https://www.quakeroats.com/oats-do-more/oats-and-grains" },
+      { label: "USDA FoodData Central", url: "https://fdc.nal.usda.gov/" },
+    ],
     body: [
       {
         kind: "p",
@@ -86,13 +91,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "how-to-measure-sticky-honey",
     locale: "en",
+    author: "S. Richey",
     title: "How to Measure Sticky Honey Without Losing Half in the Cup",
     description:
       "Honey clings to the cup. You can lose 10 percent before it makes it into your bowl. A thin oil coating fixes it. Weighing fixes it better.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-09",
     readingMinutes: 3,
     alternateSlug: "como-medir-miel-pegajosa",
     tags: ["honey", "measurement", "baking"],
+    sources: [
+      { label: "National Honey Board: Science of honey", url: "https://www.honey.com/honey-industry/science-of-honey" },
+      { label: "USDA FoodData Central: Honey", url: "https://fdc.nal.usda.gov/" },
+    ],
     body: [
       {
         kind: "p",
@@ -163,13 +173,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "powdered-sugar-vs-granulated-by-weight",
     locale: "en",
+    author: "S. Richey",
     title: "Powdered Sugar Weighs Half of Granulated (By Cup)",
     description:
       "1 cup of granulated sugar weighs 200 grams. 1 cup of powdered sugar weighs 113 grams. Swapping them by volume will sweeten or starve your recipe.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-04-14",
     readingMinutes: 4,
     alternateSlug: "azucar-glas-vs-blanca-por-peso",
     tags: ["sugar", "baking", "measurement"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "USDA FoodData Central: Sugars", url: "https://fdc.nal.usda.gov/" },
+    ],
     body: [
       {
         kind: "p",
@@ -238,13 +253,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "wet-vs-dry-measuring-cups",
     locale: "en",
+    author: "S. Richey",
     title: "Wet vs Dry Measuring Cups: When the Difference Actually Matters",
     description:
       "A wet measuring cup and a dry measuring cup hold the same volume. They are not the same tool. Using the wrong one for baking will throw off the recipe.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-04-12",
     readingMinutes: 4,
     alternateSlug: "tazas-medidoras-liquidos-vs-secos",
     tags: ["measurement", "baking", "tools"],
+    sources: [
+      { label: "King Arthur Baking: When to use dry vs liquid measuring cups", url: "https://www.kingarthurbaking.com/blog/2025/07/28/dry-vs-liquid-measuring-cups" },
+      { label: "America's Test Kitchen: Dry versus liquid measuring cups", url: "https://www.americastestkitchen.com/articles/5516-do-you-really-have-to-use-different-measuring-cups-for-liquid-and-dry-ingredients" },
+    ],
     body: [
       {
         kind: "p",
@@ -316,13 +336,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "yeast-packets-vs-tablespoons",
     locale: "en",
+    author: "S. Richey",
     title: "Yeast: Why 1 Packet Is Not 1 Tablespoon",
     description:
       "A standard packet of yeast is 7 grams or about 2 and 1/4 teaspoons. That is 3/4 of a tablespoon, not a full one. Using a full tablespoon adds 33 percent more yeast.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-07",
     readingMinutes: 4,
     alternateSlug: "levadura-sobres-vs-cucharadas",
     tags: ["yeast", "baking", "measurement", "bread"],
+    sources: [
+      { label: "Fleischmann's Yeast: Baking with yeast", url: "https://www.fleischmannsyeast.com/baking-with-yeast/" },
+      { label: "Red Star Yeast: Baking lessons", url: "https://redstaryeast.com/yeast-baking-lessons/" },
+    ],
     body: [
       {
         kind: "p",
@@ -401,13 +426,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "reading-metric-recipes-with-us-cups",
     locale: "en",
+    author: "S. Richey",
     title: "How to Read a Metric Recipe When You Only Have US Cups",
     description:
       "European and Australian recipes give grams and milliliters. US cookware gives cups and tablespoons. Here is the cheat sheet to translate without ruining the recipe.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-11",
     readingMinutes: 5,
     alternateSlug: "recetas-metricas-con-tazas-estadounidenses",
     tags: ["measurement", "international", "fundamentals"],
+    sources: [
+      { label: "NIST Office of Weights and Measures", url: "https://www.nist.gov/pml/owm" },
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+    ],
     body: [
       {
         kind: "p",
@@ -509,6 +539,7 @@ export const postsEn: BlogPost[] = [
   {
     slug: "why-scale-and-cup-disagree",
     locale: "en",
+    author: "S. Richey",
     title: "Why Your Kitchen Scale and Measuring Cup Disagree",
     description:
       "You measured 1 cup of flour, then weighed it. The scale showed 145 grams. Your recipe wanted 120. Both tools are right. The cup just held more than the recipe expected.",
@@ -516,6 +547,10 @@ export const postsEn: BlogPost[] = [
     readingMinutes: 4,
     alternateSlug: "por-que-bascula-y-taza-no-coinciden",
     tags: ["measurement", "tools", "baking"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "America's Test Kitchen: Why you should weigh your baking ingredients", url: "https://www.americastestkitchen.com/articles/2095-why-you-should-weigh-your-baking-ingredients" },
+    ],
     body: [
       {
         kind: "p",
@@ -596,13 +631,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "sifted-vs-unsifted-flour",
     locale: "en",
+    author: "S. Richey",
     title: "Sifted vs Unsifted Flour: The Weight Gap That Breaks Bakes",
     description:
       "One cup of sifted flour weighs about 110 grams. The same cup unsifted weighs 142 grams. That 25 percent gap is the difference between a tender cake and a tough one.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-10",
     readingMinutes: 5,
     alternateSlug: "harina-tamizada-vs-sin-tamizar",
     tags: ["baking", "measurement", "flour"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "Food Science Institute: Sifting and measuring flour", url: "https://foodscienceinstitute.com/2018/12/18/sifting-and-measuring-flour/" },
+    ],
     body: [
       {
         kind: "p",
@@ -678,13 +718,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "convection-oven-25-degrees",
     locale: "en",
+    author: "S. Richey",
     title: "Convection Oven: Drop 25°F (and Here Is Why)",
     description:
       "A convection fan moves hot air over your food. That makes it cook faster and hotter at the same dial setting. Lower the temperature by 25°F or shorten the cook time by about 30 percent.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-22",
     readingMinutes: 4,
     alternateSlug: "horno-conveccion-bajar-25-grados",
     tags: ["oven", "baking", "temperature"],
+    sources: [
+      { label: "America's Test Kitchen: Convection oven cooking", url: "https://support.americastestkitchen.com/hc/en-us/articles/22917926810779-Convection-Oven-Cooking" },
+      { label: "GE Appliances: Adapting recipes for convection cooking", url: "https://products.geappliances.com/appliance/gea-support-search-content?contentId=18176" },
+    ],
     body: [
       {
         kind: "p",
@@ -763,13 +808,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "halve-recipe-with-one-egg",
     locale: "en",
+    author: "S. Richey",
     title: "How to Halve a Recipe With One Egg",
     description:
       "Half of one egg is 25 grams or 2 tablespoons. Crack the egg, whisk it smooth, and use half. Save the rest for tomorrow's omelette.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-05-03",
     readingMinutes: 4,
     alternateSlug: "como-partir-receta-con-un-huevo",
     tags: ["recipe scaling", "eggs", "baking"],
+    sources: [
+      { label: "King Arthur Baking: How to reduce a recipe", url: "https://www.kingarthurbaking.com/blog/2020/11/23/how-to-reduce-a-recipe" },
+      { label: "Food Network: How to halve an egg for baking", url: "https://www.foodnetwork.com/how-to/packages/food-network-essentials/how-to-halve-an-egg-for-baking" },
+    ],
     body: [
       {
         kind: "p",
@@ -852,13 +902,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "250-ml-is-not-1-us-cup",
     locale: "en",
+    author: "S. Richey",
     title: "The 250 ml Cup Is Not the US Cup (Australian Recipe Gotcha)",
     description:
       "An Australian metric cup is 250 ml. A US cup is 236.59 ml. The 6 percent gap can ruin a small-batch cake. Here is what to watch for.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-17",
     readingMinutes: 4,
     alternateSlug: "250-ml-no-es-1-taza-estadounidense",
     tags: ["measurement", "international", "baking"],
+    sources: [
+      { label: "NIST Handbook 44 (US customary units)", url: "https://www.nist.gov/pml/owm/publications/handbook-44" },
+      { label: "Wikipedia: Cup (unit)", url: "https://en.wikipedia.org/wiki/Cup_(unit)" },
+    ],
     body: [
       {
         kind: "p",
@@ -939,13 +994,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "european-butter-vs-american-sticks",
     locale: "en",
+    author: "S. Richey",
     title: "European Butter Blocks vs American Sticks: The 250g vs 113g Problem",
     description:
       "A US butter stick is 113 grams. A European block is 250 grams. They do not divide evenly, and the butterfat is different. How to swap without ruining the bake.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-20",
     readingMinutes: 5,
     alternateSlug: "mantequilla-europea-vs-barras-estadounidenses",
     tags: ["butter", "baking", "international"],
+    sources: [
+      { label: "USDA AMS: Butter grading standards", url: "https://www.ams.usda.gov/grades-standards/butter-standard" },
+      { label: "European Commission Regulation 1308/2013 (butter standards)", url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1308" },
+    ],
     body: [
       {
         kind: "p",
@@ -1025,13 +1085,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "why-cocoa-powder-is-hard-to-measure",
     locale: "en",
+    author: "S. Richey",
     title: "Why Cocoa Powder Is So Hard to Measure by Cup",
     description:
       "Cocoa is light, fluffy, and clumps. A scooped cup can weigh anywhere from 75 to 100 grams. Here is why, and how to get a number you can trust.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-28",
     readingMinutes: 4,
     alternateSlug: "por-que-cacao-en-polvo-es-dificil-medir",
     tags: ["baking", "cocoa", "measurement"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "Wikipedia: Dutch process cocoa", url: "https://en.wikipedia.org/wiki/Dutch_process_cocoa" },
+    ],
     body: [
       {
         kind: "p",
@@ -1101,13 +1166,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "doubling-recipe-cook-time",
     locale: "en",
+    author: "S. Richey",
     title: "Doubling a Recipe Does Not Double the Cook Time",
     description:
       "When you double a recipe, the food does not need twice as long in the oven. Add 25 to 30 percent, watch closely, and use a thermometer.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-05-01",
     readingMinutes: 4,
     alternateSlug: "duplicar-receta-tiempo-coccion",
     tags: ["recipe scaling", "baking", "cooking time"],
+    sources: [
+      { label: "America's Test Kitchen: No, you can't always just double a recipe", url: "https://www.americastestkitchen.com/articles/8047-no-you-cant-always-just-double-a-recipe" },
+      { label: "KitchenAid: Doubling a recipe", url: "https://www.kitchenaid.com/pinch-of-help/countertop-appliances/doubling-a-recipe.html" },
+    ],
     body: [
       {
         kind: "p",
@@ -1176,13 +1246,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "cup-sizes-around-the-world",
     locale: "en",
+    author: "S. Richey",
     title: "Imperial Cup vs Metric Cup vs US Cup: Which Does Your Recipe Mean?",
     description:
       "There are at least three cup sizes in cooking. US 236.59 ml. Metric 250 ml. Imperial 284 ml. Here is how to spot which one your recipe wants.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-25",
     readingMinutes: 5,
     alternateSlug: "tamanos-de-taza-en-el-mundo",
     tags: ["measurement", "international", "fundamentals"],
+    sources: [
+      { label: "NIST Office of Weights and Measures", url: "https://www.nist.gov/pml/owm" },
+      { label: "Wikipedia: Cup (unit)", url: "https://en.wikipedia.org/wiki/Cup_(unit)" },
+    ],
     body: [
       {
         kind: "p",
@@ -1262,13 +1337,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "how-to-measure-flour-correctly",
     locale: "en",
+    author: "S. Richey",
     title: "How to Measure Flour Correctly (Spoon and Level, Not Scoop)",
     description:
       "Most flour mistakes come from how you scoop the cup. Spoon and level adds the right amount. Scooping packs too much. Here is the fix in 30 seconds.",
-    publishedAt: "2026-05-12",
+    publishedAt: "2026-04-04",
     readingMinutes: 4,
     alternateSlug: "como-medir-la-harina-bien",
     tags: ["baking", "measurement", "fundamentals"],
+    sources: [
+      { label: "King Arthur Baking: How to measure flour", url: "https://www.kingarthurbaking.com/blog/2020/10/29/how-to-measure-flour" },
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+    ],
     body: [
       {
         kind: "p",
@@ -1345,13 +1425,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "why-pack-brown-sugar",
     locale: "en",
+    author: "S. Richey",
     title: "Why You Should Pack Brown Sugar (and What Happens If You Don't)",
     description:
       "Brown sugar cup measurements assume you packed it firm. Loose brown sugar weighs 30 percent less, and your cookies or sauce will taste off. The 60-second fix.",
-    publishedAt: "2026-05-12",
+    publishedAt: "2026-04-07",
     readingMinutes: 3,
     alternateSlug: "por-que-compactar-azucar-morena",
     tags: ["baking", "measurement", "sugar"],
+    sources: [
+      { label: "King Arthur Baking: Measuring brown sugar", url: "https://www.kingarthurbaking.com/blog/2018/02/14/measuring-brown-sugar" },
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+    ],
     body: [
       {
         kind: "p",
@@ -1412,13 +1497,18 @@ export const postsEn: BlogPost[] = [
   {
     slug: "why-bakers-weigh-ingredients",
     locale: "en",
+    author: "S. Richey",
     title: "Why Bakers Weigh Ingredients Instead of Using Cups",
     description:
       "The short reason serious bakers switched to grams: cups lie. A guide to volume drift, scoop method, and the one tool that fixes both.",
-    publishedAt: "2026-05-11",
+    publishedAt: "2026-04-01",
     readingMinutes: 4,
     alternateSlug: "por-que-los-panaderos-pesan-ingredientes",
     tags: ["baking", "measurement", "fundamentals"],
+    sources: [
+      { label: "King Arthur Baking: Why baking by weight is better", url: "https://www.kingarthurbaking.com/blog/2023/01/17/why-bake-by-weight" },
+      { label: "America's Test Kitchen: Why you should weigh your baking ingredients", url: "https://www.americastestkitchen.com/articles/2095-why-you-should-weigh-your-baking-ingredients" },
+    ],
     body: [
       {
         kind: "p",

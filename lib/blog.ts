@@ -9,15 +9,22 @@ export interface BlogPost {
   locale: Locale;
   title: string;
   description: string;
-  // ISO date string, e.g. "2026-05-11".
+  // ISO date string, e.g. "2026-04-15".
   publishedAt: string;
   updatedAt?: string;
   // Estimated reading minutes.
   readingMinutes: number;
+  // Author byline. Pen name. Single name keeps the author page simple.
+  author?: string;
   // Slug of the counterpart in the other locale, if it exists.
   alternateSlug?: string;
   // Tag IDs for filtering. Loose; no required vocabulary yet.
   tags: string[];
+  // Optional citation list, rendered at the bottom of the post. Use the
+  // highest-quality source available: peer-reviewed science, government
+  // standards bodies (NIST, USDA, FDA), authoritative cooking institutions
+  // (King Arthur Baking, America's Test Kitchen).
+  sources?: { label: string; url: string }[];
   // Post body as ordered blocks. Keep blocks small and explicit so the template
   // stays a server component with no markdown parser dependency.
   body: PostBlock[];

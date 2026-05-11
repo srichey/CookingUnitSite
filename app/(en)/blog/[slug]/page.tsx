@@ -48,8 +48,17 @@ export default async function BlogPostPage({ params }: Props) {
     inLanguage: "en-US",
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
+    author: post.author ? { "@type": "Person", name: post.author } : undefined,
+    publisher: {
+      "@type": "Organization",
+      name: "Kitchen Converts",
+      url: SITE_URL,
+    },
     url: `${SITE_URL}/blog/${post.slug}`,
     mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
+    ...(post.sources && post.sources.length > 0
+      ? { citation: post.sources.map((s) => ({ "@type": "CreativeWork", name: s.label, url: s.url })) }
+      : {}),
   };
 
   return (
@@ -66,7 +75,13 @@ export default async function BlogPostPage({ params }: Props) {
       </nav>
 
       <p className="text-xs uppercase tracking-wider text-[color:var(--color-ink-muted)]">
-        {formatDate(post.publishedAt)} · {post.readingMinutes} min read
+        {formatDate(post.publishedAt)} ·{" "}
+        {post.author && (
+          <>
+            <span className="font-semibold text-[color:var(--color-ink)]">{post.author}</span> ·{" "}
+          </>
+        )}
+        {post.readingMinutes} min read
       </p>
       <h1 className="mt-2 font-serif text-3xl font-semibold leading-tight sm:text-4xl">
         {post.title}
@@ -79,8 +94,30 @@ export default async function BlogPostPage({ params }: Props) {
         <BlogPostBody blocks={post.body} />
       </div>
 
+      {post.sources && post.sources.length > 0 && (
+        <section className="mt-12 max-w-prose rounded-lg border border-[color:var(--color-line)] bg-white/60 p-5 shadow-[var(--shadow-soft)]">
+          <h2 className="font-serif text-base font-semibold text-[color:var(--color-ink)]">
+            Sources
+          </h2>
+          <ul className="mt-3 space-y-2 text-sm">
+            {post.sources.map((s) => (
+              <li key={s.url}>
+                <a
+                  href={s.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {post.alternateSlug && (
-        <p className="mt-12 max-w-prose text-sm text-[color:var(--color-ink-muted)]">
+        <p className="mt-10 max-w-prose text-sm text-[color:var(--color-ink-muted)]">
           ¿Leer en español?{" "}
           <Link
             href={`/es/blog/${post.alternateSlug}`}

@@ -4,13 +4,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "avena-en-hojuelas-instantanea-cortada",
     locale: "es",
+    author: "S. Richey",
     title: "Avena en hojuelas, instantánea y cortada: mismo nombre, distinto peso",
     description:
       "La avena en hojuelas y la instantánea pesan cerca de 90 gramos por taza. La avena cortada al gravado pesa 180 gramos por taza. Cambiar una por otra en la receta cambia todo.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-05",
     readingMinutes: 4,
     alternateSlug: "rolled-vs-quick-vs-steel-cut-oats",
     tags: ["avena", "reposteria", "medicion"],
+    sources: [
+      { label: "Quaker Oats: Oats and grains", url: "https://www.quakeroats.com/oats-do-more/oats-and-grains" },
+      { label: "USDA FoodData Central", url: "https://fdc.nal.usda.gov/" },
+    ],
     body: [
       {
         kind: "p",
@@ -86,13 +91,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "como-medir-miel-pegajosa",
     locale: "es",
+    author: "S. Richey",
     title: "Cómo medir miel pegajosa sin perder la mitad en la taza",
     description:
       "La miel se pega a la taza. Puedes perder 10 por ciento antes de que llegue al bol. Una capa fina de aceite lo arregla. Pesar lo arregla mejor.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-09",
     readingMinutes: 3,
     alternateSlug: "how-to-measure-sticky-honey",
     tags: ["miel", "medicion", "reposteria"],
+    sources: [
+      { label: "National Honey Board: Science of honey", url: "https://www.honey.com/honey-industry/science-of-honey" },
+      { label: "USDA FoodData Central: Honey", url: "https://fdc.nal.usda.gov/" },
+    ],
     body: [
       {
         kind: "p",
@@ -163,13 +173,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "azucar-glas-vs-blanca-por-peso",
     locale: "es",
+    author: "S. Richey",
     title: "La azúcar glas pesa la mitad que la blanca (por taza)",
     description:
       "1 taza de azúcar blanca pesa 200 gramos. 1 taza de azúcar glas pesa 113 gramos. Cambiarlas por volumen va a endulzar de más o de menos tu receta.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-04-14",
     readingMinutes: 4,
     alternateSlug: "powdered-sugar-vs-granulated-by-weight",
     tags: ["azucar", "reposteria", "medicion"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "USDA FoodData Central: Sugars", url: "https://fdc.nal.usda.gov/" },
+    ],
     body: [
       {
         kind: "p",
@@ -238,13 +253,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "tazas-medidoras-liquidos-vs-secos",
     locale: "es",
+    author: "S. Richey",
     title: "Tazas medidoras de líquidos vs de secos: cuándo importa la diferencia",
     description:
       "Una taza medidora de líquidos y una de secos guardan el mismo volumen. No son la misma herramienta. Usar la equivocada en repostería desbalancea la receta.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-04-12",
     readingMinutes: 4,
     alternateSlug: "wet-vs-dry-measuring-cups",
     tags: ["medicion", "reposteria", "utensilios"],
+    sources: [
+      { label: "King Arthur Baking: When to use dry vs liquid measuring cups", url: "https://www.kingarthurbaking.com/blog/2025/07/28/dry-vs-liquid-measuring-cups" },
+      { label: "America's Test Kitchen: Dry versus liquid measuring cups", url: "https://www.americastestkitchen.com/articles/5516-do-you-really-have-to-use-different-measuring-cups-for-liquid-and-dry-ingredients" },
+    ],
     body: [
       {
         kind: "p",
@@ -316,13 +336,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "levadura-sobres-vs-cucharadas",
     locale: "es",
+    author: "S. Richey",
     title: "Levadura: por qué 1 sobre no es 1 cucharada",
     description:
       "Un sobre estándar de levadura son 7 gramos o cerca de 2 y 1/4 cucharaditas. Es 3/4 de cucharada, no una entera. Usar una cucharada completa agrega 33 por ciento más levadura.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-07",
     readingMinutes: 4,
     alternateSlug: "yeast-packets-vs-tablespoons",
     tags: ["levadura", "reposteria", "medicion", "pan"],
+    sources: [
+      { label: "Fleischmann's Yeast: Baking with yeast", url: "https://www.fleischmannsyeast.com/baking-with-yeast/" },
+      { label: "Red Star Yeast: Baking lessons", url: "https://redstaryeast.com/yeast-baking-lessons/" },
+    ],
     body: [
       {
         kind: "p",
@@ -401,13 +426,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "recetas-metricas-con-tazas-estadounidenses",
     locale: "es",
+    author: "S. Richey",
     title: "Cómo leer una receta métrica cuando solo tienes tazas estadounidenses",
     description:
       "Las recetas europeas y australianas dan gramos y mililitros. La cocina estadounidense da tazas y cucharadas. Aquí está la guía para traducir sin arruinar la receta.",
-    publishedAt: "2026-05-14",
+    publishedAt: "2026-05-11",
     readingMinutes: 5,
     alternateSlug: "reading-metric-recipes-with-us-cups",
     tags: ["medicion", "internacional", "fundamentos"],
+    sources: [
+      { label: "NIST Office of Weights and Measures", url: "https://www.nist.gov/pml/owm" },
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+    ],
     body: [
       {
         kind: "p",
@@ -509,6 +539,7 @@ export const postsEs: BlogPost[] = [
   {
     slug: "por-que-bascula-y-taza-no-coinciden",
     locale: "es",
+    author: "S. Richey",
     title: "Por qué tu báscula y tu taza medidora no coinciden",
     description:
       "Mediste 1 taza de harina y la pesaste. La báscula marcó 145 gramos. Tu receta quería 120. Las dos herramientas están bien. La taza solo llevaba más de lo que la receta esperaba.",
@@ -516,6 +547,10 @@ export const postsEs: BlogPost[] = [
     readingMinutes: 4,
     alternateSlug: "why-scale-and-cup-disagree",
     tags: ["medicion", "utensilios", "reposteria"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "America's Test Kitchen: Why you should weigh your baking ingredients", url: "https://www.americastestkitchen.com/articles/2095-why-you-should-weigh-your-baking-ingredients" },
+    ],
     body: [
       {
         kind: "p",
@@ -596,13 +631,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "harina-tamizada-vs-sin-tamizar",
     locale: "es",
+    author: "S. Richey",
     title: "Harina tamizada vs sin tamizar: la diferencia que rompe la receta",
     description:
       "Una taza de harina tamizada pesa cerca de 110 gramos. La misma taza sin tamizar pesa 142 gramos. Esa diferencia del 25 por ciento separa un pastel suave de uno duro.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-10",
     readingMinutes: 5,
     alternateSlug: "sifted-vs-unsifted-flour",
     tags: ["reposteria", "medicion", "harina"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "Food Science Institute: Sifting and measuring flour", url: "https://foodscienceinstitute.com/2018/12/18/sifting-and-measuring-flour/" },
+    ],
     body: [
       {
         kind: "p",
@@ -677,13 +717,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "horno-conveccion-bajar-25-grados",
     locale: "es",
+    author: "S. Richey",
     title: "Horno de convección: baja 25°F (y aquí está el porqué)",
     description:
       "El ventilador de convección mueve aire caliente sobre tu comida. Cocina más rápido y más caliente al mismo número del dial. Baja la temperatura 25°F o acorta el tiempo cerca de 30 por ciento.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-22",
     readingMinutes: 4,
     alternateSlug: "convection-oven-25-degrees",
     tags: ["horno", "reposteria", "temperatura"],
+    sources: [
+      { label: "America's Test Kitchen: Convection oven cooking", url: "https://support.americastestkitchen.com/hc/en-us/articles/22917926810779-Convection-Oven-Cooking" },
+      { label: "GE Appliances: Adapting recipes for convection cooking", url: "https://products.geappliances.com/appliance/gea-support-search-content?contentId=18176" },
+    ],
     body: [
       {
         kind: "p",
@@ -762,13 +807,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "como-partir-receta-con-un-huevo",
     locale: "es",
+    author: "S. Richey",
     title: "Cómo partir una receta con un solo huevo",
     description:
       "La mitad de un huevo son 25 gramos o 2 cucharadas. Cásalo, bátelo hasta que esté liso y usa la mitad. Guarda el resto para la tortilla de mañana.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-05-03",
     readingMinutes: 4,
     alternateSlug: "halve-recipe-with-one-egg",
     tags: ["ajuste de recetas", "huevos", "reposteria"],
+    sources: [
+      { label: "King Arthur Baking: How to reduce a recipe", url: "https://www.kingarthurbaking.com/blog/2020/11/23/how-to-reduce-a-recipe" },
+      { label: "Food Network: How to halve an egg for baking", url: "https://www.foodnetwork.com/how-to/packages/food-network-essentials/how-to-halve-an-egg-for-baking" },
+    ],
     body: [
       {
         kind: "p",
@@ -851,13 +901,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "250-ml-no-es-1-taza-estadounidense",
     locale: "es",
+    author: "S. Richey",
     title: "La taza de 250 ml no es la taza estadounidense (el truco con recetas australianas)",
     description:
       "Una taza métrica australiana son 250 ml. Una taza estadounidense son 236.59 ml. La diferencia del 6 por ciento puede arruinar un pastel de tanda pequeña. Esto es lo que debes saber.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-17",
     readingMinutes: 4,
     alternateSlug: "250-ml-is-not-1-us-cup",
     tags: ["medicion", "internacional", "reposteria"],
+    sources: [
+      { label: "NIST Handbook 44 (US customary units)", url: "https://www.nist.gov/pml/owm/publications/handbook-44" },
+      { label: "Wikipedia: Cup (unit)", url: "https://en.wikipedia.org/wiki/Cup_(unit)" },
+    ],
     body: [
       {
         kind: "p",
@@ -938,13 +993,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "mantequilla-europea-vs-barras-estadounidenses",
     locale: "es",
+    author: "S. Richey",
     title: "Mantequilla europea vs barras estadounidenses: el problema de 250 g vs 113 g",
     description:
       "Una barra estadounidense son 113 gramos. Un bloque europeo son 250 gramos. No se dividen parejo y la grasa de leche cambia. Cómo intercambiar sin arruinar la receta.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-20",
     readingMinutes: 5,
     alternateSlug: "european-butter-vs-american-sticks",
     tags: ["mantequilla", "reposteria", "internacional"],
+    sources: [
+      { label: "USDA AMS: Butter grading standards", url: "https://www.ams.usda.gov/grades-standards/butter-standard" },
+      { label: "European Commission Regulation 1308/2013 (butter standards)", url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32013R1308" },
+    ],
     body: [
       {
         kind: "p",
@@ -1024,13 +1084,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "por-que-cacao-en-polvo-es-dificil-medir",
     locale: "es",
+    author: "S. Richey",
     title: "Por qué el cacao en polvo es tan difícil de medir en taza",
     description:
       "El cacao es ligero, esponjoso y se apelmaza. Una taza sumergida puede pesar entre 75 y 100 gramos. Aquí está el porqué, y cómo obtener un número confiable.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-28",
     readingMinutes: 4,
     alternateSlug: "why-cocoa-powder-is-hard-to-measure",
     tags: ["reposteria", "cacao", "medicion"],
+    sources: [
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "Wikipedia: Dutch process cocoa", url: "https://en.wikipedia.org/wiki/Dutch_process_cocoa" },
+    ],
     body: [
       {
         kind: "p",
@@ -1100,13 +1165,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "duplicar-receta-tiempo-coccion",
     locale: "es",
+    author: "S. Richey",
     title: "Duplicar una receta no duplica el tiempo de cocción",
     description:
       "Cuando duplicas una receta, la comida no necesita el doble de tiempo en el horno. Suma 25 a 30 por ciento, vigila de cerca y usa termómetro.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-05-01",
     readingMinutes: 4,
     alternateSlug: "doubling-recipe-cook-time",
     tags: ["ajuste de recetas", "reposteria", "tiempo de coccion"],
+    sources: [
+      { label: "America's Test Kitchen: No, you can't always just double a recipe", url: "https://www.americastestkitchen.com/articles/8047-no-you-cant-always-just-double-a-recipe" },
+      { label: "KitchenAid: Doubling a recipe", url: "https://www.kitchenaid.com/pinch-of-help/countertop-appliances/doubling-a-recipe.html" },
+    ],
     body: [
       {
         kind: "p",
@@ -1175,13 +1245,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "tamanos-de-taza-en-el-mundo",
     locale: "es",
+    author: "S. Richey",
     title: "Taza imperial vs métrica vs estadounidense: ¿cuál pide tu receta?",
     description:
       "Hay al menos tres tamaños de taza en cocina. Estadounidense 236.59 ml. Métrica 250 ml. Imperial 284 ml. Cómo identificar cuál quiere tu receta.",
-    publishedAt: "2026-05-13",
+    publishedAt: "2026-04-25",
     readingMinutes: 5,
     alternateSlug: "cup-sizes-around-the-world",
     tags: ["medicion", "internacional", "fundamentos"],
+    sources: [
+      { label: "NIST Office of Weights and Measures", url: "https://www.nist.gov/pml/owm" },
+      { label: "Wikipedia: Cup (unit)", url: "https://en.wikipedia.org/wiki/Cup_(unit)" },
+    ],
     body: [
       {
         kind: "p",
@@ -1261,13 +1336,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "como-medir-la-harina-bien",
     locale: "es",
+    author: "S. Richey",
     title: "Cómo medir bien la harina (cuchareo y nivelado, no sumergir)",
     description:
       "Casi todos los errores con la harina vienen del cuchareo. Cuchareo y nivelado pone la cantidad correcta. Sumergir compacta de más. Aquí está el truco en 30 segundos.",
-    publishedAt: "2026-05-12",
+    publishedAt: "2026-04-04",
     readingMinutes: 4,
     alternateSlug: "how-to-measure-flour-correctly",
     tags: ["reposteria", "medicion", "fundamentos"],
+    sources: [
+      { label: "King Arthur Baking: How to measure flour", url: "https://www.kingarthurbaking.com/blog/2020/10/29/how-to-measure-flour" },
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+    ],
     body: [
       {
         kind: "p",
@@ -1344,13 +1424,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "por-que-compactar-azucar-morena",
     locale: "es",
+    author: "S. Richey",
     title: "Por qué debes compactar la azúcar morena (y qué pasa si no)",
     description:
       "Las tazas de azúcar morena asumen que la compactaste firme. Suelta pesa 30 por ciento menos y la receta sale rara. El arreglo en 60 segundos.",
-    publishedAt: "2026-05-12",
+    publishedAt: "2026-04-07",
     readingMinutes: 3,
     alternateSlug: "why-pack-brown-sugar",
     tags: ["reposteria", "medicion", "azucar"],
+    sources: [
+      { label: "King Arthur Baking: Measuring brown sugar", url: "https://www.kingarthurbaking.com/blog/2018/02/14/measuring-brown-sugar" },
+      { label: "King Arthur Baking: Ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+    ],
     body: [
       {
         kind: "p",
@@ -1411,13 +1496,18 @@ export const postsEs: BlogPost[] = [
   {
     slug: "por-que-los-panaderos-pesan-ingredientes",
     locale: "es",
+    author: "S. Richey",
     title: "Por qué los panaderos pesan los ingredientes en vez de usar tazas",
     description:
       "La razón corta por la que los panaderos serios se cambiaron a gramos: la taza miente. Guía sobre la variación de volumen, el método de cuchareo y la herramienta que arregla ambos.",
-    publishedAt: "2026-05-11",
+    publishedAt: "2026-04-01",
     readingMinutes: 4,
     alternateSlug: "why-bakers-weigh-ingredients",
     tags: ["reposteria", "medicion", "fundamentos"],
+    sources: [
+      { label: "King Arthur Baking: Why baking by weight is better", url: "https://www.kingarthurbaking.com/blog/2023/01/17/why-bake-by-weight" },
+      { label: "America's Test Kitchen: Why you should weigh your baking ingredients", url: "https://www.americastestkitchen.com/articles/2095-why-you-should-weigh-your-baking-ingredients" },
+    ],
     body: [
       {
         kind: "p",
