@@ -79,6 +79,45 @@ function renderBlock(block: PostBlock, key: number) {
           )}
         </div>
       );
+    case "image":
+      return (
+        <figure key={key} className="mt-8">
+          {block.src ? (
+            // Real image. Use plain <img> since the source is in /public and
+            // pre-sized; we don't need next/image optimization for blog photos.
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={block.src}
+              alt={block.alt}
+              className="w-full rounded-lg border border-[color:var(--color-line)] shadow-[var(--shadow-card)]"
+              loading="lazy"
+            />
+          ) : (
+            // Placeholder box describing the planned image. The aspect ratio is
+            // a standard 16:9 to reserve realistic vertical space.
+            <div
+              role="img"
+              aria-label={block.alt}
+              className="flex aspect-[16/9] flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-[color:var(--color-line-strong)] bg-[color:var(--color-surface-warm)] p-6 text-center text-[color:var(--color-ink-muted)]"
+            >
+              <span aria-hidden="true" className="text-2xl">🖼️</span>
+              <span className="text-xs font-medium uppercase tracking-wider">
+                Image placeholder
+              </span>
+              {block.placeholder && (
+                <span className="max-w-md text-sm italic text-[color:var(--color-ink-soft)]">
+                  {block.placeholder}
+                </span>
+              )}
+            </div>
+          )}
+          {block.caption && (
+            <figcaption className="mt-2 text-sm text-[color:var(--color-ink-muted)]">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
     default:
       return null;
   }

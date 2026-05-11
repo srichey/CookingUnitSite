@@ -30,7 +30,18 @@ export type PostBlock =
   | { kind: "ul"; items: string[] }
   | { kind: "ol"; items: string[] }
   | { kind: "callout"; text: string }
-  | { kind: "link"; text: string; href: string; description?: string };
+  | { kind: "link"; text: string; href: string; description?: string }
+  // Image block. If src is provided, render the real image. If only placeholder
+  // is provided, render a styled placeholder box describing what the image
+  // should be. Always include alt text so when src is added, no other edits
+  // are needed.
+  | {
+      kind: "image";
+      src?: string;
+      alt: string;
+      caption?: string;
+      placeholder?: string;
+    };
 
 import { postsEn } from "@/content/en/blog/posts";
 import { postsEs } from "@/content/es/blog/posts";
