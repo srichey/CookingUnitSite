@@ -7,6 +7,7 @@ import type { Locale } from "./site";
 export interface CommonStrings {
   nav: {
     home: string;
+    calculators: string;
     recipeScaler: string;
     blog: string;
     faq: string;
@@ -33,6 +34,7 @@ const STRINGS: Record<Locale, CommonStrings> = {
   en: {
     nav: {
       home: "Home",
+      calculators: "Calculators",
       recipeScaler: "Recipe scaler",
       blog: "Blog",
       faq: "FAQ",
@@ -57,6 +59,7 @@ const STRINGS: Record<Locale, CommonStrings> = {
   es: {
     nav: {
       home: "Inicio",
+      calculators: "Calculadoras",
       recipeScaler: "Escalador de recetas",
       blog: "Blog",
       faq: "Preguntas",

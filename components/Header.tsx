@@ -19,12 +19,12 @@ export function Header({ locale }: HeaderProps) {
 
   const links: NavLink[] = locale === "en"
     ? [
-        { href: "/recipe-scaler", label: strings.nav.recipeScaler },
+        { href: "/calculators", label: strings.nav.calculators },
         { href: "/faq", label: strings.nav.faq },
         { href: "/blog", label: strings.nav.blog },
       ]
     : [
-        { href: "/es/escalador-de-recetas", label: strings.nav.recipeScaler },
+        { href: "/es/calculadoras", label: strings.nav.calculators },
         { href: "/es/preguntas", label: strings.nav.faq },
         { href: "/es/blog", label: strings.nav.blog },
       ];
