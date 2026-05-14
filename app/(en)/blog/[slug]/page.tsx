@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo";
-import { getAllPosts, getPost } from "@/lib/blog";
+import { getAllPosts, getPost, getRelatedPosts } from "@/lib/blog";
 import { sanitiseJsonLd, breadcrumbSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 import { BlogPostBody } from "@/components/BlogPostBody";
@@ -128,6 +128,31 @@ export default async function BlogPostPage({ params }: Props) {
           </ul>
         </section>
       )}
+
+      {(() => {
+        const related = getRelatedPosts(post, 4);
+        if (related.length === 0) return null;
+        return (
+          <section className="mt-12 max-w-prose">
+            <h2 className="font-serif text-xl font-semibold">Related posts</h2>
+            <ul className="mt-4 space-y-4">
+              {related.map((r) => (
+                <li key={r.slug}>
+                  <Link
+                    href={`/blog/${r.slug}`}
+                    className="text-base font-semibold text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
+                  >
+                    {r.title}
+                  </Link>
+                  <p className="mt-1 text-sm text-[color:var(--color-ink-muted)]">
+                    {r.description}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })()}
 
       {post.alternateSlug && (
         <p className="mt-10 max-w-prose text-sm text-[color:var(--color-ink-muted)]">

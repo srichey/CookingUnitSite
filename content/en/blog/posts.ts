@@ -2,6 +2,176 @@ import type { BlogPost } from "@/lib/blog";
 
 export const postsEn: BlogPost[] = [
 {
+    slug: "high-altitude-baking-conversions",
+    locale: "en",
+    author: "S. Richey",
+    title: "High-Altitude Baking: How Cup and Gram Conversions Change Above 3,000 Feet",
+    description:
+      "Above 3,000 feet, the same recipe that worked at sea level falls flat, runs over the pan, or comes out dry. Lower air pressure changes how flour behaves, how leavening works, and how liquids evaporate. Here is exactly what to change and by how much.",
+    publishedAt: "2026-05-15",
+    readingMinutes: 8,
+    tags: ["altitude", "baking", "measurement", "leavening", "moisture"],
+    sources: [
+      { label: "King Arthur Baking: High-altitude baking", url: "https://www.kingarthurbaking.com/learn/resources/high-altitude-baking" },
+      { label: "Colorado State University Extension: High altitude food preparation", url: "https://extension.colostate.edu/topic-areas/nutrition-food-safety-health/high-altitude-food-preparation-p41/" },
+      { label: "USDA Food Safety: High altitude cooking", url: "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/high-altitude-cooking" },
+      { label: "America's Test Kitchen: High altitude baking adjustments", url: "https://www.americastestkitchen.com/articles/3470-high-altitude-baking" },
+    ],
+    body: [
+      {
+        kind: "p",
+        text:
+          "If you live in Denver, Albuquerque, Salt Lake City, Boise, Reno, Flagstaff, or anywhere above about 3,000 feet, the recipe you copied from a sea-level cookbook does not work the same way in your kitchen. Cakes sink. Cookies spread too thin. Bread proofs too fast and tastes yeasty. The recipe is not wrong. The air is.",
+      },
+      {
+        kind: "callout",
+        text:
+          "Quick answer: above 3,000 feet, reduce leavening (baking soda, baking powder, yeast) by 15 to 25 percent, increase liquid by 1 to 4 tablespoons per cup, increase oven temperature by 15 to 25 degrees Fahrenheit, and add 1 to 2 tablespoons of flour per cup. The exact amount depends on your elevation. The chart further down has the numbers.",
+      },
+      { kind: "h2", text: "Why altitude breaks baking" },
+      {
+        kind: "p",
+        text:
+          "Atmospheric pressure drops about 3 percent for every 1,000 feet of elevation. By 5,000 feet, you have lost 15 percent of the air pressure that was holding your batter together at sea level. Three things change as a result.",
+      },
+      {
+        kind: "ol",
+        items: [
+          "Gases expand more easily. Carbon dioxide from baking soda, baking powder, and yeast pushes harder against weaker air. The dough rises faster, often before its structure has set, and then collapses.",
+          "Water boils at a lower temperature. At sea level, water boils at 212°F (100°C). At 5,000 feet, it boils at 203°F (95°C). At 7,500 feet, 198°F (92°C). Liquids evaporate sooner, doughs dry out faster, and sugars concentrate, throwing off the sugar-to-flour ratio.",
+          "Flour absorbs moisture differently. The combination of faster evaporation and (in most western US states) lower humidity means a cup of King Arthur all-purpose flour at 6,000 feet feels and behaves like a cup that has had a tablespoon of water pulled out of it.",
+        ],
+      },
+      { kind: "h2", text: "The four adjustments that fix most recipes" },
+      {
+        kind: "p",
+        text:
+          "There is no single universal correction. The right combination depends on what you are baking and how high you are. But four levers cover almost every problem.",
+      },
+      {
+        kind: "ol",
+        items: [
+          "Reduce leavening. Cut baking powder and baking soda by 1/8 teaspoon per teaspoon at 3,000 to 5,000 feet, by 1/4 teaspoon at 5,000 to 7,000 feet, and by up to 1/2 teaspoon at 7,000 feet and up. For yeast, use about 25 percent less and watch the rise; do not let it go past doubled.",
+          "Increase liquid. Add 1 tablespoon of water, milk, or other liquid per cup of flour at 3,000 to 5,000 feet, 2 tablespoons at 5,000 to 7,000 feet, and 3 to 4 tablespoons above 7,000 feet. This replaces the moisture lost to faster evaporation.",
+          "Increase oven temperature. Bump the oven up by 15 to 25°F (about 10 to 15°C). This sets the structure of the cake or cookie before the over-active gas can collapse it.",
+          "Add flour. Strengthen the structure with 1 tablespoon of extra flour per cup at 3,000 to 5,000 feet, and 2 tablespoons per cup above 5,000 feet. Use the same flour the recipe calls for; do not switch types here.",
+        ],
+      },
+      {
+        kind: "callout",
+        text:
+          "Adjust one variable at a time when you are tuning a favorite recipe. Cut leavening first; that fixes the most common altitude failure (collapsed cake, deflated muffin). If the result is still dry, add liquid. If it is still spreading, add flour. If the texture is still off, raise the oven.",
+      },
+      { kind: "h2", text: "How much to adjust at each elevation" },
+      {
+        kind: "p",
+        text:
+          "Use this as a starting point. Every kitchen and every recipe behaves a little differently, so make small notes in the margin of your cookbook and adjust again next time.",
+      },
+      {
+        kind: "ul",
+        items: [
+          "3,000 to 5,000 feet: reduce baking powder by 1/8 tsp per tsp, add 1 tbsp liquid per cup of flour, raise oven by 15°F, add up to 1 tbsp flour per cup.",
+          "5,000 to 7,000 feet: reduce baking powder by 1/4 tsp per tsp, add 2 tbsp liquid per cup of flour, raise oven by 20°F, add 1 to 2 tbsp flour per cup.",
+          "7,000 to 9,000 feet: reduce baking powder by 1/4 to 1/2 tsp per tsp, add 3 to 4 tbsp liquid per cup of flour, raise oven by 25°F, add 2 tbsp flour per cup.",
+          "Above 9,000 feet: King Arthur Baking recommends seeking out altitude-specific recipes; the corrections become large enough that small changes do not always behave linearly.",
+        ],
+      },
+      { kind: "h2", text: "Flour at altitude: why brand and type matter more" },
+      {
+        kind: "p",
+        text:
+          "At sea level, the difference between a cup of King Arthur all-purpose flour (120 grams per cup spoon-and-leveled) and a cup of Bob's Red Mill all-purpose flour (130 grams per cup) is real but rarely a recipe killer. At 6,000 feet, the same 10-gram gap matters more, because every other variable is already off. Weighing your flour with a scale becomes the single most useful change you can make. The scale gives you the same number every time, regardless of how dry the air was when you scooped.",
+      },
+      {
+        kind: "p",
+        text:
+          "Bread flour and high-protein flours like King Arthur Bread Flour (127 grams per cup) hold up better at altitude than cake flour, because the extra protein gives the dough more structure to fight the over-active gas. If you bake bread at altitude, this is the lever to reach for.",
+      },
+      { kind: "h2", text: "What changes by recipe type" },
+      {
+        kind: "ul",
+        items: [
+          "Cakes and quick breads: most affected. Reduce leavening first. A vanilla cake recipe written for sea level will rise too fast, set in a dome, then collapse in the middle if you do not.",
+          "Cookies: spread more at altitude. Add 1 to 2 tablespoons of flour per cup of flour in the recipe, and chill the dough for 30 minutes before baking.",
+          "Yeast breads: rise faster. Use about 25 percent less yeast, watch the rise instead of the clock, and shape the dough as soon as it has doubled. Two short rises beat one long one above 5,000 feet.",
+          "Custards, puddings, and stovetop syrups: lower boiling point means slower temperature climbs and longer cook times. A candy thermometer is essential; do not trust the recipe time.",
+          "Fried foods and braises: water boils at a lower temperature, so the food cooks slightly more slowly. Add 5 to 10 percent to braising and simmering time.",
+        ],
+      },
+      { kind: "h2", text: "Tools that make altitude baking easier" },
+      {
+        kind: "p",
+        text:
+          "Three pieces of kit do more than any single recipe adjustment.",
+      },
+      {
+        kind: "ol",
+        items: [
+          "A digital kitchen scale with a tare button and gram precision. This is the single most useful upgrade for any baker, and it matters double at altitude.",
+          "A candy thermometer that reads to at least 400°F. Boiling-point math gets you in the right ballpark; the thermometer tells you exactly when the syrup or custard has set.",
+          "A standalone oven thermometer. Most home ovens are 10 to 25°F off from the dial, and at altitude that gap can be the difference between a set cake and a fallen one.",
+        ],
+      },
+      { kind: "h2", text: "When to swap recipes instead of adjusting" },
+      {
+        kind: "p",
+        text:
+          "Some recipes do not adjust well no matter how careful you are. Souffles, angel food cakes, popovers, and chiffon cakes depend on a precise air structure that altitude disrupts hard. For these, find a recipe written by a baker who works above 5,000 feet. The Colorado State University Extension publishes a free, peer-reviewed altitude baking handbook with tested recipes for each elevation band, and King Arthur Baking has a high-altitude collection. These will save you the trial-and-error that comes from forcing a sea-level recipe to behave at altitude.",
+      },
+      {
+        kind: "callout",
+        text:
+          "Bottom line: at altitude, weighing your ingredients in grams matters more than at sea level, not less. The cup measurement assumes a particular flour density, a particular humidity, and a particular air pressure. Altitude changes all three. A scale removes one of those variables and lets you focus the adjustment on leavening, liquid, and oven temperature.",
+      },
+      { kind: "h2", text: "Common altitude baking questions" },
+      {
+        kind: "h3",
+        text:
+          "Do I need to adjust at exactly 3,000 feet?",
+      },
+      {
+        kind: "p",
+        text:
+          "Most recipes start to feel the difference between 2,500 and 3,500 feet. If you are at 3,000 feet, try the original recipe first; if it sinks, collapses, or runs, apply the 3,000 to 5,000 foot adjustments next time.",
+      },
+      {
+        kind: "h3",
+        text: "Why do my cookies spread into one big sheet at altitude?",
+      },
+      {
+        kind: "p",
+        text:
+          "Lower air pressure plus drier air lets butter melt and run faster than the cookie structure can set. Add a tablespoon of flour per cup, chill the dough firm, and bake on a cool sheet pan (not one straight from the previous batch).",
+      },
+      {
+        kind: "h3",
+        text: "Does altitude affect cooking, or only baking?",
+      },
+      {
+        kind: "p",
+        text:
+          "It affects both, but baking is more sensitive because the dough or batter has to set and trap gas in a precise window. For cooking, the main change is that water-based methods (boiling, simmering, braising) take a little longer because water boils at a lower temperature.",
+      },
+      {
+        kind: "h3",
+        text: "Should I switch to high-altitude recipes entirely?",
+      },
+      {
+        kind: "p",
+        text:
+          "For cakes, yeast breads, and any recipe where structure matters (souffles, popovers, angel food, chiffon), yes. For cookies, quick breads, brownies, and most everyday baking, adjusting a sea-level recipe with the corrections above works fine.",
+      },
+      {
+        kind: "link",
+        text: "Open the recipe scaler",
+        href: "/recipe-scaler",
+        description:
+          "Use the scaler to halve, double, or otherwise resize a recipe in cups and grams. Scale first, then apply altitude adjustments.",
+      },
+    ],
+  },
+  {
     slug: "why-scale-and-cup-disagree",
     locale: "en",
     author: "S. Richey",

@@ -64,3 +64,31 @@ export function getAllPosts(locale: Locale): BlogPost[] {
 export function getPost(locale: Locale, slug: string): BlogPost | undefined {
   return ALL_POSTS.find((p) => p.locale === locale && p.slug === slug);
 }
+
+/**
+ * Returns posts in the same locale ranked by tag overlap with the given post,
+ * with the most-recent posts breaking ties. The current post is always
+ * excluded. Used to build the "Related posts" block on each blog page so
+ * topic clusters form automatically as new posts are added.
+ *
+ * If a post has zero tag overlap with anything, the function falls back to
+ * the most recent posts in the same locale so the block never renders empty.
+ */
+export function getRelatedPosts(
+  post: BlogPost,
+  limit: number = 4,
+): BlogPost[] {
+  const candidates = ALL_POSTS.filter(
+    (p) => p.locale === post.locale && p.slug !== post.slug,
+  );
+  const tagSet = new Set(post.tags);
+  const scored = candidates.map((p) => {
+    const overlap = p.tags.filter((t) => tagSet.has(t)).length;
+    return { post: p, overlap };
+  });
+  scored.sort((a, b) => {
+    if (b.overlap !== a.overlap) return b.overlap - a.overlap;
+    return b.post.publishedAt.localeCompare(a.post.publishedAt);
+  });
+  return scored.slice(0, limit).map((s) => s.post);
+}
