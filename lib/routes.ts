@@ -156,6 +156,14 @@ export const PAGES: PageEntry[] = [
     lastUpdated: "2026-05-11",
   },
   {
+    id: "about",
+    kind: "guide",
+    paths: { en: "/about", es: "/es/acerca" },
+    priority: 0.5,
+    changefreq: "yearly",
+    lastUpdated: "2026-05-14",
+  },
+  {
     id: "contact",
     kind: "legal",
     paths: { en: "/contact", es: "/es/contacto" },

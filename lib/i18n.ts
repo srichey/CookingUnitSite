@@ -22,6 +22,7 @@ export interface CommonStrings {
     blog: string;
     faq: string;
     contact: string;
+    about: string;
     tagline: string;
     rights: string;
   };
@@ -49,6 +50,7 @@ const STRINGS: Record<Locale, CommonStrings> = {
       blog: "Blog",
       faq: "FAQ",
       contact: "Contact",
+      about: "About",
       tagline: "Convert and scale recipes without guessing.",
       rights: "All rights reserved.",
     },
@@ -74,6 +76,7 @@ const STRINGS: Record<Locale, CommonStrings> = {
       blog: "Blog",
       faq: "Preguntas",
       contact: "Contacto",
+      about: "Acerca de",
       tagline: "Convierte y ajusta recetas sin adivinar.",
       rights: "Todos los derechos reservados.",
     },

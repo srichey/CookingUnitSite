@@ -16,6 +16,11 @@ const securityHeaders = [
     key: "Permissions-Policy",
     value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   },
+  // Cross-origin isolation pair. COEP intentionally omitted — it breaks
+  // AdSense and other third-party embeds. COOP and CORP are safe and
+  // give us the remaining headroom on securityheaders.com.
+  { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+  { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
   // Conservative CSP. AdSense needs Google ad domains; tighten as the
   // ad stack stabilises. Report-only first if Google rejects the policy
   // by switching the header key to "Content-Security-Policy-Report-Only".

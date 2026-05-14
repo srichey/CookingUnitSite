@@ -15,6 +15,7 @@ export function Footer({ locale }: FooterProps) {
   const faqHref = locale === "en" ? "/faq" : "/es/preguntas";
   const blogHref = locale === "en" ? "/blog" : "/es/blog";
   const contactHref = locale === "en" ? "/contact" : "/es/contacto";
+  const aboutHref = locale === "en" ? "/about" : "/es/acerca";
   const calculatorsHref = locale === "en" ? "/calculators" : "/es/calculadoras";
 
   return (
@@ -30,6 +31,9 @@ export function Footer({ locale }: FooterProps) {
           </Link>
           <Link href={blogHref} className="hover:text-[color:var(--color-ink)] hover:underline">
             {strings.footer.blog}
+          </Link>
+          <Link href={aboutHref} className="hover:text-[color:var(--color-ink)] hover:underline">
+            {strings.footer.about}
           </Link>
           <Link href={contactHref} className="hover:text-[color:var(--color-ink)] hover:underline">
             {strings.footer.contact}

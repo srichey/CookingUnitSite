@@ -48,7 +48,14 @@ export default async function BlogPostPage({ params }: Props) {
     inLanguage: "en-US",
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
-    author: post.author ? { "@type": "Person", name: post.author } : undefined,
+    author: post.author
+      ? {
+          "@type": "Person",
+          "@id": `${SITE_URL}/about#scott-richey`,
+          name: post.author,
+          url: `${SITE_URL}/about`,
+        }
+      : undefined,
     publisher: {
       "@type": "Organization",
       name: "Kitchen Converts",
@@ -78,7 +85,13 @@ export default async function BlogPostPage({ params }: Props) {
         {formatDate(post.publishedAt)} ·{" "}
         {post.author && (
           <>
-            <span className="font-semibold text-[color:var(--color-ink)]">{post.author}</span> ·{" "}
+            <Link
+              href="/about"
+              className="font-semibold text-[color:var(--color-ink)] hover:underline"
+            >
+              {post.author}
+            </Link>{" "}
+            ·{" "}
           </>
         )}
         {post.readingMinutes} min read

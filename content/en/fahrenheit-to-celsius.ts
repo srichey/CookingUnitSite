@@ -31,7 +31,7 @@ export const fahrenheitToCelsiusEn = {
       ],
     },
     accuracy: {
-      title: "Why your oven still bakes different",
+      title: "Why your oven still bakes differently",
       body: [
         "Oven dials are not exact. A 350°F oven can be 25 degrees off in either direction. Buy a cheap oven thermometer and check yours. The number is more of a guide than a fact.",
         "Convection ovens (with a fan) cook hotter for the same setting. Drop the dial by 25°F (15°C) or check the food earlier. Bake times shrink by 10 to 15 percent.",
