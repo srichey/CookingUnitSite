@@ -5,6 +5,7 @@ import {
   breadcrumbSchema,
   faqSchema,
   webApplicationSchema,
+  datasetSchema,
 } from "@/lib/schema";
 import { CalculatorPageShell } from "@/components/CalculatorPageShell";
 import { CupsGramsConverter } from "@/components/cups-grams/CupsGramsConverter";
@@ -35,6 +36,22 @@ export default function Page() {
     description: copy.metaDescription,
     path: PATH,
     inLanguage: "es-419",
+  });
+  const ldDataset = datasetSchema({
+    path: PATH,
+    name: "Kitchen Converts: Densidades de ingredientes (tazas, cucharadas, gramos)",
+    description:
+      "Valores de peso por densidad para ingredientes comunes de cocina y repostería: harina común, harina de pan, harina para pastel, harina de almendra, azúcar blanca, azúcar morena, mantequilla, miel, cacao en polvo y avena. Una taza estadounidense equivale a 236.588 ml.",
+    variableMeasured: ["Masa por taza estadounidense (gramos)", "Masa por cucharada estadounidense (gramos)"],
+    distributionPath: "/data/ingredient-densities.json",
+    distributionFormat: "application/json",
+    citedSources: [
+      { label: "King Arthur Baking ingredient weight chart", url: "https://www.kingarthurbaking.com/learn/ingredient-weight-chart" },
+      { label: "USDA FoodData Central", url: "https://fdc.nal.usda.gov/" },
+      { label: "America's Test Kitchen ingredient chart", url: "https://www.americastestkitchen.com/articles/2095-why-you-should-weigh-your-baking-ingredients" },
+    ],
+    inLanguage: "es-419",
+    dateModified: LAST_UPDATED,
   });
 
   return (
@@ -77,6 +94,10 @@ export default function Page() {
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldWebApp) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldDataset) }}
           />
         </>
       }

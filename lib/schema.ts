@@ -127,3 +127,63 @@ export function webApplicationSchema(input: WebAppSchemaInput) {
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
   };
 }
+
+export interface DatasetSchemaInput {
+  // Page that hosts the dataset (used for url + canonical reference).
+  path: string;
+  name: string;
+  description: string;
+  // Variables measured in the dataset, e.g. ["Mass per US cup", "Mass per US tablespoon"].
+  variableMeasured: string[];
+  // Optional. JSON or CSV distribution URL hosted under /public/data/.
+  // Example: "/data/ingredient-densities.json".
+  distributionPath?: string;
+  distributionFormat?: "application/json" | "text/csv";
+  // Sources cited inline in the page. Surface them as schema:isBasedOn so
+  // Google's Knowledge Graph treats them as primary references.
+  citedSources?: { label: string; url: string }[];
+  inLanguage: "en-US" | "es-419";
+  // Date the values were last reviewed, ISO date.
+  dateModified: string;
+}
+
+/**
+ * Dataset JSON-LD. Tells Google and AI engines that the page hosts a
+ * structured database of facts (per-ingredient densities, oven temperatures,
+ * butter unit conversions). When paired with a real distribution URL under
+ * /public/data/, this is the strongest signal that the data is canonical
+ * and machine-consumable.
+ */
+export function datasetSchema(input: DatasetSchemaInput) {
+  const payload: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: input.name,
+    description: input.description,
+    url: `${SITE_URL}${input.path}`,
+    inLanguage: input.inLanguage,
+    isAccessibleForFree: true,
+    creator: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    variableMeasured: input.variableMeasured,
+    dateModified: input.dateModified,
+  };
+  if (input.distributionPath) {
+    payload.distribution = [
+      {
+        "@type": "DataDownload",
+        encodingFormat: input.distributionFormat || "application/json",
+        contentUrl: `${SITE_URL}${input.distributionPath}`,
+      },
+    ];
+  }
+  if (input.citedSources && input.citedSources.length > 0) {
+    payload.isBasedOn = input.citedSources.map((s) => ({
+      "@type": "CreativeWork",
+      name: s.label,
+      url: s.url,
+    }));
+  }
+  return payload;
+}

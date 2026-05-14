@@ -1,6 +1,11 @@
 // Ingredient density data. Volume-to-weight conversions depend on the ingredient.
 // Sources: King Arthur Baking, USDA FoodData Central, ATK ingredient weight charts.
 // grams_per_cup is the canonical reference; other units derive from it.
+//
+// IMPORTANT: when you add or change an entry here, also update
+// public/data/ingredient-densities.json. That file is the public Dataset
+// distribution referenced by the JSON-LD on /cups-to-grams. Until we have
+// a build-time generator, both files must be edited together.
 
 import type { Locale } from "./site";
 

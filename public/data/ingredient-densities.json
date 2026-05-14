@@ -1,0 +1,38 @@
+{
+  "name": "Kitchen Converts: Ingredient Densities",
+  "description": "Cup and tablespoon weight values for common cooking and baking ingredients, in grams. US cup is 236.588 ml. Tablespoon values use 16 tablespoons per cup unless an ingredient overrides.",
+  "version": "2026-05-14",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "source": "https://kitchenconverts.com/cups-to-grams",
+  "citations": [
+    "King Arthur Baking ingredient weight chart",
+    "USDA FoodData Central",
+    "America's Test Kitchen ingredient chart"
+  ],
+  "fields": {
+    "id": "Stable identifier",
+    "name_en": "English display name",
+    "name_es": "Spanish display name",
+    "category": "flour | sugar | fat | liquid | grain | other",
+    "grams_per_cup": "Mass of one US cup (236.588 ml) in grams",
+    "grams_per_tablespoon": "Mass of one US tablespoon in grams; computed as grams_per_cup / 16 unless overridden"
+  },
+  "ingredients": [
+    { "id": "water", "name_en": "Water", "name_es": "Agua", "category": "liquid", "grams_per_cup": 237, "grams_per_tablespoon": 14.81 },
+    { "id": "milk-whole", "name_en": "Whole milk", "name_es": "Leche entera", "category": "liquid", "grams_per_cup": 245, "grams_per_tablespoon": 15.31 },
+    { "id": "oil", "name_en": "Vegetable oil", "name_es": "Aceite vegetal", "category": "liquid", "grams_per_cup": 218, "grams_per_tablespoon": 13.63 },
+    { "id": "flour-ap", "name_en": "All-purpose flour", "name_es": "Harina común", "category": "flour", "grams_per_cup": 120, "grams_per_tablespoon": 7.5 },
+    { "id": "flour-bread", "name_en": "Bread flour", "name_es": "Harina de pan", "category": "flour", "grams_per_cup": 127, "grams_per_tablespoon": 7.94 },
+    { "id": "flour-cake", "name_en": "Cake flour", "name_es": "Harina para pastel", "category": "flour", "grams_per_cup": 114, "grams_per_tablespoon": 7.13 },
+    { "id": "flour-whole-wheat", "name_en": "Whole wheat flour", "name_es": "Harina integral", "category": "flour", "grams_per_cup": 113, "grams_per_tablespoon": 7.06 },
+    { "id": "flour-almond", "name_en": "Almond flour", "name_es": "Harina de almendra", "category": "flour", "grams_per_cup": 96, "grams_per_tablespoon": 6.0 },
+    { "id": "sugar-granulated", "name_en": "Granulated sugar", "name_es": "Azúcar blanca", "category": "sugar", "grams_per_cup": 200, "grams_per_tablespoon": 12.5 },
+    { "id": "sugar-brown", "name_en": "Brown sugar (packed)", "name_es": "Azúcar morena (compactada)", "category": "sugar", "grams_per_cup": 213, "grams_per_tablespoon": 13.31 },
+    { "id": "sugar-powdered", "name_en": "Powdered sugar", "name_es": "Azúcar glas", "category": "sugar", "grams_per_cup": 113, "grams_per_tablespoon": 7.06 },
+    { "id": "butter", "name_en": "Butter", "name_es": "Mantequilla", "category": "fat", "grams_per_cup": 227, "grams_per_tablespoon": 14.19 },
+    { "id": "honey", "name_en": "Honey", "name_es": "Miel", "category": "liquid", "grams_per_cup": 336, "grams_per_tablespoon": 21.0 },
+    { "id": "cocoa", "name_en": "Cocoa powder (unsweetened)", "name_es": "Cacao en polvo (sin azúcar)", "category": "other", "grams_per_cup": 85, "grams_per_tablespoon": 5.31 },
+    { "id": "oats-rolled", "name_en": "Rolled oats", "name_es": "Avena en hojuelas", "category": "grain", "grams_per_cup": 90, "grams_per_tablespoon": 5.63 },
+    { "id": "rice-white", "name_en": "White rice (uncooked)", "name_es": "Arroz blanco (crudo)", "category": "grain", "grams_per_cup": 200, "grams_per_tablespoon": 12.5 }
+  ]
+}
