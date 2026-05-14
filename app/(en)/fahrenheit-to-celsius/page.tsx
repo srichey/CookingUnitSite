@@ -8,6 +8,7 @@ import {
 } from "@/lib/schema";
 import { CalculatorPageShell } from "@/components/CalculatorPageShell";
 import { TemperatureConverter } from "@/components/converters/TemperatureConverter";
+import { TEMPERATURE_SOURCES } from "@/lib/sources";
 import { fahrenheitToCelsiusEn as copy } from "@/content/en/fahrenheit-to-celsius";
 
 const PATH = "/fahrenheit-to-celsius";
@@ -62,6 +63,7 @@ export default function Page() {
         hrefLang: "es-419",
       }}
       lastUpdatedIso={LAST_UPDATED}
+      sources={TEMPERATURE_SOURCES}
       jsonLdScripts={
         <>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: sanitiseJsonLd(ldBreadcrumb) }} />

@@ -11,7 +11,7 @@ export const homeCopyEs = {
     "Una taza mide espacio. Un gramo mide peso. La misma taza de harina pesa menos que la misma taza de azúcar, mantequilla, miel o arroz. Casi todos los conversores ignoran esto y dan respuestas erradas para repostería. Nuestras herramientas saben el peso por taza de cada alimento. El número que copias a tu receta es el número que de verdad necesitas.",
   popularTitle: "Herramientas populares",
   popularSubtitle:
-    "Cada semana publicamos nuevas. Guarda esta página o síguenos en Pinterest.",
+    "Publicamos nuevas con frecuencia. Guarda esta página para encontrarlas.",
   tools: [
     {
       title: "Escalador de recetas",
@@ -44,5 +44,5 @@ export const homeCopyEs = {
   ],
   promiseTitle: "La promesa",
   promiseBody:
-    "Sin popups. Sin login. Sin recolección de datos. Sin relleno antes de la calculadora. Cada página empieza con la herramienta, te da la respuesta y después explica el porqué si lo quieres.",
+    "Sin popups. Sin login. Sin relleno antes de la calculadora. Cada página empieza con la herramienta, te da la respuesta y después explica el porqué si lo quieres. Algunas páginas pueden mostrar anuncios para mantener el sitio gratis; ver la política de privacidad para más detalles.",
 };

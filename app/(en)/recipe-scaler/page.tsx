@@ -9,6 +9,7 @@ import {
   faqSchema,
   webApplicationSchema,
 } from "@/lib/schema";
+import { SCALING_SOURCES, SOURCES_HEADING, SOURCES_INTRO } from "@/lib/sources";
 import { recipeScalerCopyEn as copy } from "@/content/en/recipe-scaler";
 
 const PATH = "/recipe-scaler";
@@ -150,6 +151,33 @@ export default function Page() {
           ¿Necesitas esta herramienta en español? Ver el escalador de recetas.
         </Link>
       </p>
+
+      <section
+        className="mt-8 max-w-prose rounded-lg border border-[color:var(--color-line)] bg-white/60 p-5 shadow-[var(--shadow-soft)]"
+        aria-label={SOURCES_HEADING.en}
+      >
+        <h2 className="font-serif text-base font-semibold text-[color:var(--color-ink)]">
+          {SOURCES_HEADING.en}
+        </h2>
+        <p className="mt-1 text-sm text-[color:var(--color-ink-muted)]">{SOURCES_INTRO.en}</p>
+        <ul className="mt-3 space-y-2 text-sm">
+          {SCALING_SOURCES.map((s) => (
+            <li key={s.url}>
+              <a
+                href={s.url}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
+              >
+                {s.label}
+              </a>
+              {s.note && (
+                <span className="text-[color:var(--color-ink-muted)]">. {s.note}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <p className="mt-8 text-xs text-[color:var(--color-ink-muted)]">
         Last updated:{" "}

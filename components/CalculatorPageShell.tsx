@@ -6,6 +6,12 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { AdSlot } from "./AdSlot";
 import type { Locale } from "@/lib/site";
+import {
+  WEIGHT_SOURCES,
+  SOURCES_HEADING,
+  SOURCES_INTRO,
+  type Source,
+} from "@/lib/sources";
 
 interface BreadcrumbItem {
   name: string;
@@ -61,6 +67,9 @@ interface Props {
   related: RelatedSection;
   alternateLink: { label: string; href: string; hrefLang: string };
   lastUpdatedIso: string;
+  // Outbound citations rendered as a Sources block above the Last Updated line.
+  // Defaults to WEIGHT_SOURCES; override per-page for temperature, scaling, etc.
+  sources?: Source[];
   jsonLdScripts: ReactNode;
 }
 
@@ -82,6 +91,7 @@ export function CalculatorPageShell({
   related,
   alternateLink,
   lastUpdatedIso,
+  sources = WEIGHT_SOURCES,
   jsonLdScripts,
 }: Props) {
   return (
@@ -189,6 +199,37 @@ export function CalculatorPageShell({
         <h3 className="font-serif text-base font-semibold text-[color:var(--color-ink-muted)]">{geo.title}</h3>
         <p className="mt-2 text-sm text-[color:var(--color-ink-muted)]">{geo.body}</p>
       </section>
+
+      {sources && sources.length > 0 && (
+        <section
+          className="mt-8 max-w-prose rounded-lg border border-[color:var(--color-line)] bg-white/60 p-5 shadow-[var(--shadow-soft)]"
+          aria-label={SOURCES_HEADING[locale]}
+        >
+          <h2 className="font-serif text-base font-semibold text-[color:var(--color-ink)]">
+            {SOURCES_HEADING[locale]}
+          </h2>
+          <p className="mt-1 text-sm text-[color:var(--color-ink-muted)]">
+            {SOURCES_INTRO[locale]}
+          </p>
+          <ul className="mt-3 space-y-2 text-sm">
+            {sources.map((s) => (
+              <li key={s.url}>
+                <a
+                  href={s.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
+                >
+                  {s.label}
+                </a>
+                {s.note && (
+                  <span className="text-[color:var(--color-ink-muted)]">. {s.note}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <p className="mt-8 text-xs text-[color:var(--color-ink-muted)]">
         {locale === "es" ? "Última actualización" : "Last updated"}:{" "}

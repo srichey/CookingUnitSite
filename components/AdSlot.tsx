@@ -22,6 +22,12 @@ export function AdSlot({ slot, size = "inline", locale, className }: AdSlotProps
   const dims = SIZES[size];
   const isLive = Boolean(ADSENSE_CLIENT && slot);
 
+  // Render nothing when AdSense isn't configured. Empty "Advertisement"
+  // placeholders can hurt AdSense approval and look broken to visitors.
+  // The slot reappears automatically once NEXT_PUBLIC_ADSENSE_CLIENT is set
+  // and a real slot ID is passed in.
+  if (!isLive) return null;
+
   return (
     <aside
       aria-label={strings.adSlot.label}
@@ -29,22 +35,17 @@ export function AdSlot({ slot, size = "inline", locale, className }: AdSlotProps
       style={{ maxWidth: dims.maxWidth }}
     >
       <div
-        className="flex items-center justify-center rounded-md border border-dashed border-[color:var(--color-line-strong)] bg-white/40 text-xs uppercase tracking-wider text-[color:var(--color-ink-muted)]"
+        className="flex items-center justify-center rounded-md bg-white/40"
         style={{ minHeight: dims.minHeight }}
       >
-        {isLive ? (
-          // When AdSense is live, render the real ins element.
-          <ins
-            className="adsbygoogle block"
-            style={{ display: "block", width: "100%", height: dims.minHeight }}
-            data-ad-client={ADSENSE_CLIENT}
-            data-ad-slot={slot}
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
-        ) : (
-          <span>{strings.adSlot.label}</span>
-        )}
+        <ins
+          className="adsbygoogle block"
+          style={{ display: "block", width: "100%", height: dims.minHeight }}
+          data-ad-client={ADSENSE_CLIENT}
+          data-ad-slot={slot}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
       </div>
     </aside>
   );

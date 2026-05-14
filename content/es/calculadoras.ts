@@ -6,7 +6,7 @@ export const calculadorasCopyEs = {
     "Todas las calculadoras de cocina y repostería de Kitchen Converts, agrupadas por uso. Conversiones de volumen, peso, temperatura del horno, pesos por ingrediente y ajuste de recetas.",
   h1: "Todas las calculadoras",
   intro:
-    "Todas las herramientas de cocina y repostería del sitio, agrupadas por lo que quieres hacer. Cada semana publicamos nuevas; guarda esta página o síguenos en Pinterest.",
+    "Todas las herramientas de cocina y repostería del sitio, agrupadas por lo que quieres hacer. Publicamos nuevas con frecuencia; guarda esta página para encontrarlas.",
   groups: [
     {
       heading: "Herramientas de recetas",

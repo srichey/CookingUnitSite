@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { SITE_NAME } from "@/lib/site";
+import { EmailLink } from "@/components/EmailLink";
 
 export const metadata: Metadata = buildMetadata({
   title: `Contacto: ${SITE_NAME}`,
@@ -20,7 +21,7 @@ export default function ContactoPage() {
 
       <h2 className="mt-8 font-serif text-xl font-semibold">¿Encontraste un error?</h2>
       <p className="mt-2 text-base">
-        Cuéntanos la URL de la calculadora, qué buscaste, qué número obtuviste y qué esperabas. Lo arreglamos y actualizamos la página.
+        Cuéntanos la URL de la calculadora, qué buscaste, qué número obtuviste y qué esperabas. Pega la URL en el correo para que encontremos la página rápido. Lo arreglamos y actualizamos la página.
       </p>
 
       <h2 className="mt-8 font-serif text-xl font-semibold">Sugiere una calculadora</h2>
@@ -31,12 +32,11 @@ export default function ContactoPage() {
       <h2 className="mt-8 font-serif text-xl font-semibold">Correo</h2>
       <p className="mt-2 text-base">
         Escribe a{" "}
-        <a
-          href="mailto:hello@kitchenconverts.com"
+        <EmailLink
+          user="hello"
+          domain="kitchenconverts.com"
           className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
-        >
-          hello@kitchenconverts.com
-        </a>
+        />
         .
       </p>
 

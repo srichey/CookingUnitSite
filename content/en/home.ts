@@ -11,7 +11,7 @@ export const homeCopyEn = {
     "A cup measures space. A gram measures weight. The same cup of flour weighs less than the same cup of sugar, butter, honey, or rice. Most unit converters skip this and give the wrong answer for baking. Our tools know the weight per cup for each food. So the number you copy to your recipe is the number you really need.",
   popularTitle: "Popular tools",
   popularSubtitle:
-    "New tools come out every week. Save this page or follow along on Pinterest.",
+    "New tools come out often. Bookmark this page so you can find them.",
   tools: [
     {
       title: "Recipe scaler",
@@ -44,5 +44,5 @@ export const homeCopyEn = {
   ],
   promiseTitle: "The promise",
   promiseBody:
-    "No popups. No login. No data collection. No filler before the calculator. Every page leads with the tool, gives you the answer, then explains the why if you want it.",
+    "No popups. No login. No filler before the calculator. Every page leads with the tool, gives you the answer, then explains the why if you want it. Some pages may show ads to keep the site free; see our privacy policy for details.",
 };

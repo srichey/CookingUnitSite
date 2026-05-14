@@ -42,7 +42,7 @@ export function Footer({ locale }: FooterProps) {
           </Link>
         </div>
         <p className="mt-6 text-xs">
-          {year} {SITE_NAME}. {strings.footer.rights}
+          &copy; {year} {SITE_NAME}. {strings.footer.rights}
         </p>
       </div>
     </footer>

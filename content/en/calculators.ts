@@ -16,7 +16,7 @@ export const calculatorsCopyEn = {
     "Every cooking and baking calculator on Kitchen Converts, grouped by use. Volume conversions, weight, oven temperature, ingredient-specific weights, and recipe scaling.",
   h1: "All calculators",
   intro:
-    "Every cooking and baking tool on this site, grouped by what you are trying to do. New tools publish each week; bookmark this page or follow along on Pinterest.",
+    "Every cooking and baking tool on this site, grouped by what you are trying to do. New tools publish often; bookmark this page so you can find them.",
   groups: [
     {
       heading: "Recipe tools",

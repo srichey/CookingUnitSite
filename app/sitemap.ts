@@ -10,15 +10,22 @@ import { getAllPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
-  const now = new Date();
+  // Fallback for any page that has not declared a lastUpdated date yet.
+  // Stable across builds so Google does not see a sitemap that claims every
+  // page was modified on every crawl (a known anti-pattern that gets the
+  // lastmod field discounted site-wide).
+  const fallbackLastModified = new Date("2026-05-11");
 
   // Static pages and calculator pages from the routes registry.
   for (const page of PAGES) {
+    const lastModified = page.lastUpdated
+      ? new Date(page.lastUpdated)
+      : fallbackLastModified;
     for (const locale of ["en", "es"] as const) {
       const path = page.paths[locale];
       entries.push({
         url: `${SITE_URL}${path}`,
-        lastModified: now,
+        lastModified,
         changeFrequency: page.changefreq || "monthly",
         priority: page.priority ?? 0.5,
         alternates: {

@@ -13,6 +13,11 @@ import {
   faqSchema,
   webApplicationSchema,
 } from "@/lib/schema";
+import {
+  WEIGHT_SOURCES,
+  SOURCES_HEADING,
+  SOURCES_INTRO,
+} from "@/lib/sources";
 import type { Locale } from "@/lib/site";
 import type { IngredientLanding } from "@/content/ingredient-landing";
 import type { Metadata } from "next";
@@ -192,6 +197,38 @@ export function IngredientLandingPage({
           {altLabel}
         </Link>
       </p>
+
+      {/* Sources: outbound citations to weight-data authorities. Renders the
+         same authority block as the calculator pages so every URL the user
+         lands on shows transparent sourcing. */}
+      <section
+        className="mt-8 max-w-prose rounded-lg border border-[color:var(--color-line)] bg-white/60 p-5 shadow-[var(--shadow-soft)]"
+        aria-label={SOURCES_HEADING[locale]}
+      >
+        <h2 className="font-serif text-base font-semibold text-[color:var(--color-ink)]">
+          {SOURCES_HEADING[locale]}
+        </h2>
+        <p className="mt-1 text-sm text-[color:var(--color-ink-muted)]">
+          {SOURCES_INTRO[locale]}
+        </p>
+        <ul className="mt-3 space-y-2 text-sm">
+          {WEIGHT_SOURCES.map((s) => (
+            <li key={s.url}>
+              <a
+                href={s.url}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-[color:var(--color-accent-strong)] underline hover:text-[color:var(--color-ink)]"
+              >
+                {s.label}
+              </a>
+              {s.note && (
+                <span className="text-[color:var(--color-ink-muted)]">. {s.note}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <p className="mt-8 text-xs text-[color:var(--color-ink-muted)]">
         {isEn ? "Last updated" : "Última actualización"}:{" "}
